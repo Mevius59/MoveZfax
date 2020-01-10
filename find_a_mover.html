@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<!-- Head BEGIN -->
+<head>
+  <meta charset="utf-8">
+  <title>MoverZfax-Home</title>
+
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta content="MoverZfax UI description" name="description">
+  <meta content="MoverZfax Shop UI keywords" name="keywords">
+  <meta content="keenthemes" name="author">
+
+  <meta property="og:site_name" content="-CUSTOMER VALUE-">
+  <meta property="og:title" content="-CUSTOMER VALUE-">
+  <meta property="og:description" content="-CUSTOMER VALUE-">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="-CUSTOMER VALUE-"><!-- link to image for socio -->
+  <meta property="og:url" content="-CUSTOMER VALUE-">
+
+  <link rel="shortcut icon" href="m_icon.png">
+
+  <!-- Fonts START -->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
+  <!-- Fonts END -->
+
+  <!-- Global styles START -->          
+  <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Global styles END --> 
+   
+  <!-- Page level plugin styles START -->
+  <link href="assets/pages/css/animate.css" rel="stylesheet">
+  <link href="assets/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet">
+  <link href="assets/plugins/owl.carousel/assets/owl.carousel.css" rel="stylesheet">
+  <!-- Page level plugin styles END -->
+
+  <!-- Theme styles START -->
+  <link href="assets/pages/css/components.css" rel="stylesheet">
+  <link href="assets/pages/css/slider.css" rel="stylesheet">
+  <link href="assets/corporate/css/style.css" rel="stylesheet">
+  <link href="assets/corporate/css/style-responsive.css" rel="stylesheet">
+  <link href="assets/corporate/css/themes/red.css" rel="stylesheet" id="style-color">
+  <!-- <link href="css/uikit.min.css" rel="stylesheet"> -->
+  <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="assets/corporate/css/custom.css" rel="stylesheet">
+  <!-- Theme styles END -->
+</head>
+<!-- Head END -->
+
+<!-- Body BEGIN -->
+<body class="corporate">
+    <!-- BEGIN STYLE CUSTOMIZER -->
+    <!-- <div class="color-panel hidden-sm">
+      <div class="color-mode-icons icon-color"></div>
+      <div class="color-mode-icons icon-color-close"></div>
+      <div class="color-mode">
+        <p>THEME COLOR</p>
+        <ul class="inline">
+          <!- <li class="color-red current color-default" data-style="red"></li> -->
+          <!-- <li class="color-blue" data-style="blue"></li> -->
+          <!-- <li class="color-green" data-style="green"></li> -->
+          <!-- <li class="color-orange" data-style="orange"></li> -->
+          <!-- <li class="color-gray" data-style="gray"></li> -->
+          <!-- <li class="color-turquoise" data-style="turquoise"></li> -->
+        <!-- </ul> -->
+      <!-- </div> -->
+    <!-- </div> --> 
+    <!-- END BEGIN STYLE CUSTOMIZER -->
+     <!-- Login Modal -->
+     <div class="modal fade modal-top" id="login_modal">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content radius">
+          <!-- Modal Header -->
+          <div class="modal-header p-t20">
+            <div class="row">
+              <div class="col-sm-6">
+                <h4 class="modal-title form-h4">Member Login</h4>
+              </div>
+              <div class="col-sm-6">
+                <button type="button" class="close close-font" data-dismiss="modal">&times;</button>  
+              </div>
+
+            </div>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+              <label class="p-10">E-mail</label>
+              <input class="form-control p-b10" type="text" name="uname">
+              <label class="p-10">Password</label>
+              <input class="form-control p-b10" type="password" name="pass">
+              <a href="#" data-toggle="modal" data-target="#forgot_pass_modal">Forgot password ?</a>
+              <input type="submit" class="btn btn-danger" value="login" name="">
+          </div>
+          <!-- Modal footer -->
+          <div class="modal-footer" style="justify-content: flex-start;">
+              <p>New Member? <a href="#" data-toggle="modal" data-target="#sign_up_modal">Sign up here</a></p>
+          </div>
+          </div>
+      </div>
+     </div>
+    <!--Modal ends-->
+  
+<!-- Forgot Password Modal -->
+<div class="modal fade" id="forgot_pass_modal">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+              <h4 class="modal-title">Reset Password</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+              <p>
+                  No worries. Just give us your registered email address and we'll send you a link which you can click to confirm this pasword reset process and some instructions on how to proceed with your request.
+              </p>
+              <label style="font-weight: 500">E-mail</label>
+              <input class="form-control" type="text" name="uname">
+          </div>
+          <!-- Modal footer -->
+          <div class="modal-footer" style="justify-content: flex-start;">
+              <input class="btn btn-success" type="submit" value="Submit" name="">
+          </div>
+          </div>
+      </div>
+</div>
+<!--Modal ends-->
+  
+<!--Signup Modal-->
+<div class="modal fade" id="sign_up_modal">
+          <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+              <h4 class="modal-title">Who are you ?</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+              <a href="customer_register.html"><button class="btn btn-success">Customer</button></a>
+              <a href="mover_register.html"><button class="btn btn-danger">Mover</button></a>
+          </div>
+              </div>
+          </div>
+</div>
+<!--Modal ends--> 
+
+    <!-- BEGIN TOP BAR -->
+    <div class="pre-header">
+        <div class="container">
+            <div class="row">
+                <!-- BEGIN TOP BAR LEFT PART -->
+                <div class="col-md-6 col-sm-6 additional-shop-info">
+                    <ul class="list-unstyled list-inline">
+                        <li><i class="fa fa-phone"></i><span>866-828-9688</span></li>
+                        <li><i class="fa fa-envelope-o"></i><span>support@moverzfax.com</span></li>
+                    </ul>
+                </div>
+                <!-- END TOP BAR LEFT PART -->
+                <!-- BEGIN TOP BAR MENU -->
+                <div class="col-md-6 col-sm-6 additional-nav">
+                    <ul class="list-unstyled list-inline pull-right">
+                      <li><a href="#" data-toggle="modal" data-target="#login_modal">Sign In / Sign Up</a></li>
+                    </ul>
+                </div>
+                <!-- END TOP BAR MENU -->
+            </div>
+        </div>        
+    </div>
+    <!-- END TOP BAR -->
+    <!-- BEGIN HEADER -->
+    <div class="header" style="margin-bottom: 0!important;">
+      <div class="container">
+        <a class="site-logo"  href="index.html"><img src="assets/corporate/img/logos/logo-corp-green.png" alt="Metronic FrontEnd" style="width: 180px;height: 47px;"></a>
+
+        <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
+
+        <!-- BEGIN NAVIGATION -->
+        <div class="header-navigation pull-right font-transform-inherit">
+          <ul>
+            <li class="active">
+              <a class="dropdown-toggle" href="index.html"> Home </a>
+            </li>
+            <li>
+              <a class="dropdown-toggle" href="about.html">
+                About                
+              </a>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                Services                
+              </a>
+                
+              <ul class="dropdown-menu">
+                <li><a href="find_a_mover.html">Find a Mover</a></li>
+                <li><a href="#">Order Report</a></li>
+                <li><a href="add_review.html">Add a Review</a></li>                           
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                Support                
+              </a>
+                
+              <ul class="dropdown-menu">
+                <li><a href="contact_us.html">Contact us</a></li>
+                <li><a href="support.html">Send a Message</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                More Links 
+                
+              </a>
+                
+              <ul class="dropdown-menu">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="link_to_us.html">Link to us</a></li>
+                <li><a href="#">Promotional Video</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Video Testimonials</a></li>
+              </ul>
+            </li>            
+          </ul>
+        </div>
+        <!-- END NAVIGATION -->
+      </div>
+    </div>
+    <!-- Header END -->
+     <!--find_a_mover start-->
+     <div class="container" style="margin-top:10px; max-width: 100%">
+      <div class="row text-justify">
+          <div class="col-sm-8" style="border-right: 1px solid black; ">
+              <h1 class="text-center" style="font-weight: 500">Mover Advanced Search</h1>
+              <p><h3>SEARCH CRITERIA</h3>If you are not sure of the moving company USDOT number or MC, just select your state of origination and press Search. The system will find all the certified and accredited moving company in your area based on their intrastate or interstate licenses.</p>
+              <form>
+                  <table class="table">
+                      <tbody>
+                          <tr>
+                              <td><label>Search Keyword</label></td>
+                              <td><input type="text" class="form-control" name="" placeholder="Enter Search Keyword"></td>
+                          </tr>
+                          <tr>
+                              <td><label>Country</label></td>
+                              <td>
+                                  <select class="form-control">
+                                      <option value="">Select Country</option><option value="1" selected="">United States</option>
+                                      <option value="2">Canada</option>
+                                  </select>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td><label>State</label></td>
+                              <td>
+                                  <select class="form-control">
+                                      <option value=""></option>
+                                  </select>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td><label>City</label></td>
+                              <td>
+                                  <select class="form-control">
+                                      <option value=""></option>
+                                  </select>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td><label>Zip Code</label></td>
+                              <td><input type="number" class="form-control" name="" placeholder="Enter Zip Code"></td>
+                          </tr>
+                          <tr>
+                              <td><label>Sort By</label></td>
+                              <td>
+                                  <select class="form-control">
+                                      <option value="">Sort By</option>
+                                      <option value="">Local Mover</option>
+                                      <option value="">Long Distance Mover</option>
+                                      <option value="">Cross-Border to Cannada</option>
+                                  </select>
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  <p>Sort by either IntraState (Local move) or Interstate (long Distance move), and the system will find the company with appropriate licenses to service you. Now if you want to search a specific mover, the USDOT or MC number is REQUIRED.</p>
+                  <table class="table">
+                      <tbody>
+                          <tr>
+                              <td><label>USDOT#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></td>
+                              <td><input type="number" class="form-control" name="" placeholder="USDOT#"></td>
+                          </tr>
+                          <tr>
+                              <td><label>MC#</label></td>
+                              <td><input type="number" class="form-control" name="" placeholder="MC#"></td>
+                          </tr>
+                          <tr>
+                              <td></td>
+          
+                              <td><input type="submit" class="btn btn-success" name="" value="Search"></td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </form>
+          </div>
+          
+          <div class="col-sm-4">
+              <h1>OR</h1>
+              <p><h3>BROWSE BY INITIALS</h3>Browse our list of movers through initial letters or numbers.</p><p>If a navigation item is grayed out, then that means that there are no movers with those initials under the specified country or state.</p><br>
+              <p class="text-center" style="color: grey"># 0 1 2 3 4 5 6 7 8 9</p>
+              <p class="text-center" style="color: grey">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+          </div>
+      </div><hr>
+      <div class="row text-center">
+          <div class="col-sm-12"><img src="img/CAPTURE2.png"></div>
+      </div><br>
+    </div>        
+    <!--find_a_mover end-->
+<!--about end-->
+        <!-- BEGIN CLIENTS -->
+      <div class="row margin-bottom-40"></div>
+    <!-- BEGIN PRE-FOOTER -->
+    <div class="pre-footer" style="margin-bottom:0; background-color: black;">
+      <div class="container">
+        <div class="row">
+          <!-- BEGIN BOTTOM ABOUT BLOCK -->
+          <div class="col-sm-2">
+            <h4 style="color: #ffffff; text-align: center">Legal Status</h4>
+            <ul style="color: #ffffff; font-size: 13px">
+              <a href="https://moverzfax.com/state-registration.html">State Registration</a>
+              <a href="http://ai.fmcsa.dot.gov/hhg/search.asp">Federal Registration</a>
+              <a href="http://ai.fmcsa.dot.gov/">Analysis and Information: <br>Federal Movers</a>
+              <a href="http://www.movingscam.com/superlist">MovingScam Status</a>										
+              <a href="http://li-public.fmcsa.dot.gov/LIVIEW/pkg_carrquery.prc_carrlist">Licensing and Information</a>
+          </ul>
+          </div>
+          <div class="col-sm-2">
+            <h4 style="color: #ffffff; text-align: center;">MoverZfax.com</h4>
+            <ul style="color: #ffffff; font-size: 13px">
+                <a href="faq.html">Frequently Asked Questions</a>
+                <a href="privacy_policy.html">Privacy Policy</a>
+                <a href="contact_us.html">Contact Us</a>
+                <a href="t&c.html">Terms of Use</a>
+            </ul>
+        </div>
+        <div class="col-sm-3">
+            <h4 style="color: #ffffff; text-align: center">Moving Associations</h4>
+            <ul style="color: #ffffff; font-size: 13px">
+                <a href="http://www.bbb.org/">Better Business Bureau</a>
+                <a href="http://www.mover.net/">Canadian Association of Movers</a>
+                <a href="http://www.moving.org/">American Moving &amp; Storage Assoc.</a>
+                <a href="http://promover.org/">Promover.org</a>
+                <a href="http://www.iamovers.org/">International Association of Movers</a>
+            </ul>
+        </div>
+        <div class="col-sm-3">
+            <h4 style="color: #ffffff; text-align: center">Recommendation Portals</h4>
+            <ul style="color: #ffffff; font-size: 13px">
+                <a href="http://mymovingreviews.com/">My Moving Reviews</a>
+                <a href="http://www.yelp.com/dc">Yelp</a>
+                <a href="http://www.insiderpages.com/">Insider Pages</a>
+                <a href="http://www.kudzu.com/">Kudzu</a>
+                <a href="http://www.moverreviews.com/">Mover Reviews</a>
+                <a href="http://www.ripoffreport.com/">Ripoff Report</a>
+                <a href="http://www.reviewamover.com/">Review a Mover</a>
+                <a href="http://www.moverssearchandreviews.com/">Movers Search and Reviews</a>
+                <!--<li><a href="http://epinions.com/Moving_Companies">Epinions</a></li>-->
+                <a href="http://bestmovingcompaniesreviews.com/category/movers-reviews/">Best Moving Companies</a>
+                <a href="http://www.angieslist.com/moving/">Angies List</a>
+                <a href="http://transportreviews.com/">Transport Reviews</a>
+                <a href="http://transportreports.com/">Transport Reports</a>
+                <a href="http://movingguardian.org/">Moving Guardian</a>
+                <a href="http://www.bestmoverspackers.com/moving-reviews.html">Best Movers Packers</a>
+          <!-- END BOTTOM ABOUT BLOCK -->
+        <a href="http://www.movers.com/moving-reviews.html">Movers Reviews</a>  
+                <a href="http://www.moverrankings.com/latest-moving-company-reviews.php">Mover Rankings</a>
+                <a href="http://www.movingcompanyreviews.com/">Moving Company Reviews</a>
+                            <a href="https://moverzfax.com/add-a-review.html">MoverZfax Reviews</a>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                        <h4 style="color: #ffffff; text-align: center">Protect Yourself</h4>
+                        <ul style="color: #ffffff; font-size: 13px">
+                            <a href="https://www.protectyourmove.gov/related-sites/contactstate_view.aspx">Customer Resource (PER STATE)</a>
+                            <a href="https://nccdb.fmcsa.dot.gov/NCCDB/ComplaintEntry.aspx?choice=CONSUMER">Write a Complaints to USDOT</a>
+                            <a href="http://ai.fmcsa.dot.gov/hhg/search.asp">Search For Complaints</a>
+                            <a href="http://safer.fmcsa.dot.gov/CompanySnapshot.aspx">Federal Motor Carrier Snapshot</a>
+                            <a href="https://ai.fmcsa.dot.gov/SMS/Search/Index.aspx">Safety Data For Movers</a>
+                            <a href="https://www.pissedconsumer.com/post-complaint.html">Pissed Consumer</a>
+                            <a href="http://www.consumeraffairs.com/movers/">Consumer Affairs</a>
+                            <a href="http://www.complaintsboard.com/?search=Moving+companies&amp;complaints=Complaints">Complaints Board</a>
+                        </ul>
+                    </div>
+                </div><hr>
+                  <!-- BEGIN PAYMENTS -->
+                  <div class="col-md-4 col-sm-4 padding-top-10">
+                    ©2019 All Rights Reserverd. 
+                  </div>
+          <div class="col-md-4 col-sm-4" style="font-size: large;">
+            <ul class="social-footer list-unstyled list-inline pull-right">
+              <li><a href="https://www.protectyourmove.gov/related-sites/contactstate_view.aspx"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.protectyourmove.gov/related-sites/contactstate_view.aspx"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="https://www.protectyourmove.gov/related-sites/contactstate_view.aspx"><i class="fa fa-dribbble"></i></a></li>
+              <li><a href="jhttps://www.protectyourmove.gov/related-sites/contactstate_view.aspx"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://www.protectyourmove.gov/related-sites/contactstate_view.aspx"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.protectyourmove.gov/related-sites/contactstate_view.aspx"><i class="fa fa-skype"></i></a></li>
+              <li><a href="https://www.protectyourmove.gov/related-sites/contactstate_view.aspx"><i class="fa fa-github"></i></a></li>
+              <li><a href="https://www.protectyourmove.gov/related-sites/contactstate_view.aspx"><i class="fa fa-youtube"></i></a></li>
+              <li><a href="https://www.protectyourmove.gov/related-sites/contactstate_view.aspx"><i class="fa fa-dropbox"></i></a></li>
+            </ul>  
+          </div>
+          
+          <!-- END PAYMENTS -->
+          <!-- BEGIN POWERED -->
+          <div class="col-md-4 col-sm-4 text-right">
+            <p class="powered">Powered by: <a href="http://www.keenthemes.com/">Best stronger Team</a></p>
+          </div>
+          <!-- END POWERED -->
+                <!-- <div class="row">
+                    <div class="text-left" style="color: white">©2019 All Rights Reserverd.</div>
+                    <div class="text-right" style="color: white">Follow us on
+                        <img src="img/stumble-upon.png">
+                        <img src="img/linkedin.png">
+                        <img src="img/twitter.png">
+                        <img src="img/google-plus.png">
+                        <img src="img/facebook.png">
+                    </div>
+                </div> -->
+        </div>
+        <!--footer end-->
+
+    <!-- Load javascripts at bottom, this will reduce page load time -->
+    <!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
+    <!--[if lt IE 9]>
+    <script src="assets/plugins/respond.min.js"></script>
+    <![endif]-->
+    <script src="assets/plugins/jquery.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>      
+    <script src="assets/corporate/scripts/back-to-top.js" type="text/javascript"></script>
+    <!-- END CORE PLUGINS -->
+
+    <!-- BEGIN PAGE LEVEL JAVASCRIPTS (REQUIRED ONLY FOR CURRENT PAGE) -->
+    <script src="assets/plugins/fancybox/source/jquery.fancybox.pack.js" type="text/javascript"></script><!-- pop up -->
+    <script src="assets/plugins/owl.carousel/owl.carousel.min.js" type="text/javascript"></script><!-- slider for products -->
+
+    <script src="assets/corporate/scripts/layout.js" type="text/javascript"></script>
+    <script src="assets/pages/scripts/bs-carousel.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function() {          
+            
+          $('.client-item').mouseover(function(){   
+            // alert('fsndfldslf');
+             $('.color-img').css("display", "none");
+             $(this) .find('.color-img').css("display", "block");
+             $(this) .find('.color-img').css("border", "solid");
+             $('.first-item').css("display", "block");
+             $(this).find('.first-item').css("display", "none");
+            });
+
+            Layout.init();    
+            Layout.initOWL();
+            // Layout.initTwitter();
+            Layout.initFixHeaderWithPreHeader(); /* Switch On Header Fixing (only if you have pre-header) */
+            Layout.initNavScrolling();
+
+           
+        });
+    </script>
+    <!-- END PAGE LEVEL JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>

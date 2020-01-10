@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <title>MoverZfax</title>
+            <meta charset="utf-8">
+            <meta content="width=device-width, initial-scale=1" name="viewport">
+            <style>
+                    /* Make the image fully responsive */
+                    .carousel-inner img {
+                        width: 83%;
+                        height: 83%;
+                    }
+               </style>
+           
+            <link rel="shortcut icon" href="img/m_icon.png" />
+            <link href="css/bootstrap 4/bootstrap.min.css" rel="stylesheet">
+            <link href="css/uikit 3.0.2/uikit.min.css" rel="stylesheet">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.2/js/uikit.min.js">
+            </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.2/js/uikit-icons.min.js">
+            </script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+            </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js">
+            </script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js">
+            </script>
+            <script type="text/javascript">	$(document).scroll(function() {
+                $('#logo').css({height: $(this).scrollTop() > 90? "70px":"90px"});
+            });
+            </script>
+            <style type="text/css">
+                .dropdown:hover .dropdown-menu {
+                display: block;
+                margin-top: 0; 
+                /* <!--remove the gap so it doesn't close-->  */
+             }
+            </style>
+    </head>
+    <body>
+        
+        <!--header start-->
+            <!--contact and logos-->
+                <div class="jumbotron d-none d-sm-block" style="margin-bottom:0; height: 6.2rem; background-color: #ffffff; padding: 1rem">
+                            <img class="float-right" src="img/USDOT-logo.gif" style="height: 100%"> <img class="float-right" src="img/registration_logo.gif" style="height: 100%; padding-right: 2rem"> <img class="float-right" src="img/bbb-logo.png" style="height: 100%; padding-right: 2rem"> <img class="float-right" src="img/seal.png" style="height: 100%; padding-right: 2rem"> <img class="float-left" src="img/toll-free-number.png" style="height: 120%;" usemap="#logos"> <map id="logos" name="logos">
+                                <area alt="" coords="7,4,187,5,185,64,35,63,31,80,19,78,14,75,11,75,9,76,7,75,3,44" href="tel:8668289688" shape="poly" title="">
+                                <area alt="" coords="36,65,35,80,184,82,183,67" href="mailto:support@moverzfax.com" shape="poly" title="">
+                                <area alt="Default" nohref="nohref" shape="default" title="Default">
+                            </map>
+                            <img class="mx-auto d-block img-fluid" src="img/MoverZfax.png" style="height: 100%;">
+                </div>
+                    
+            <!--navigation bar-->
+                <nav class="navbar navbar-expand-sm bg-success navbar-dark sticky-top">
+                            <a class="navbar-brand" href="index.html"><img src="img/LOGO.png" style="height: 90px" id="logo"></a> <button class="navbar-toggler" data-target="#collapsibleNavbar" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+                            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about.html">About</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbardrop">Services</a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="find_a_mover.html">Find a Mover</a> 
+                                            <a class="dropdown-item" href="#">Order Report</a> 
+                                            <a class="dropdown-item" href="add_review.html">Add a Review</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbardrop">Support</a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="contact_us.html">Contact us</a> 
+                                            <a class="dropdown-item" href="support.html">Send a Message</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbardrop">More Links</a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="blog.html">Blog</a> 
+                                            <a class="dropdown-item" href="link_to_us.html">Link to us</a> 
+                                            <a class="dropdown-item" href="#">Promotional Video</a> 
+                                            <a class="dropdown-item" href="#">Testimonials</a> 
+                                            <a class="dropdown-item" href="#">Video Testimonials</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <li class="navbar-nav ml-auto nav-item">
+                                        <a class="nav-link" href="#" data-toggle="modal" data-target="#login_modal">Sign In | Sign Up</a>
+                                </li>
+                            </div>
+                </nav>
+            <!--navigation ends-->
+                    
+            <!-- Login Modal -->
+                <div class="modal fade" id="login_modal">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Member Login</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <label style="font-weight: 500">E-mail</label>
+                                <input class="form-control" type="text" name="uname">
+                                <label style="font-weight: 500">Password</label>
+                                <input class="form-control" type="password" name="pass">
+                                <a href="#" data-toggle="modal" data-target="#forgot_pass_modal">Forgot password ?</a>
+                                <input type="submit" class="btn btn-danger" value="login" name="">
+                            </div>
+                            <!-- Modal footer -->
+                            <div class="modal-footer" style="justify-content: flex-start;">
+                                <p>New Member? <a href="#" data-toggle="modal" data-target="#sign_up_modal">Sign up here</a></p>
+                            </div>
+                            </div>
+                        </div>
+                </div>
+            <!--Modal ends-->
+                    
+            <!-- Forgot Password Modal -->
+                <div class="modal fade" id="forgot_pass_modal">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Reset Password</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <p>
+                                    No worries. Just give us your registered email address and we'll send you a link which you can click to confirm this pasword reset process and some instructions on how to proceed with your request.
+                                </p>
+                                <label style="font-weight: 500">E-mail</label>
+                                <input class="form-control" type="text" name="uname">
+                            </div>
+                            <!-- Modal footer -->
+                            <div class="modal-footer" style="justify-content: flex-start;">
+                                <input class="btn btn-success" type="submit" value="Submit" name="">
+                            </div>
+                            </div>
+                        </div>
+                </div>
+            <!--Modal ends-->
+                    
+            <!--Signup Modal-->
+                <div class="modal fade" id="sign_up_modal">
+                            <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Who are you ?</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <a href="customer_register.html"><button class="btn btn-success">Customer</button></a>
+                                <a href="mover_register.html"><button class="btn btn-danger">Mover</button></a>
+                            </div>
+                                </div>
+                            </div>
+                </div>
+            <!--Modal ends-->
+        <!--header end-->
+
+        <!--mover_resister start-->
+        <div class="container" style="margin-top:10px; max-width: 100%">
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8">
+                        <h1 class="text-center">Mover Registration</h1>
+                        <form>
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td><label>USDOT#<sup style="color: red">*</sup></label></td>
+                                        <td><input type="text" class="form-control" name="" placeholder="Enter USDOT#" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>Company Name<sup style="color: red">*</sup></label></td>
+                                        <td><input type="text" class="form-control" name="" placeholder="Enter Company Name" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>Alternative Business Name</label></td>
+                                        <td><input type="text" class="form-control" name="" placeholder="Enter Alternative Business Name"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>Company's Website</label></td>
+                                        <td><input type="text" class="form-control" name="" placeholder="example.com"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>Company's Contact Number<sup style="color: red">*</sup></label></td>
+                                        <td><input type="number" class="form-control" name="" placeholder="000-000-0000" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>Company's Fax Number</label></td>
+                                        <td><input type="text" class="form-control" name="" placeholder="Fax Number"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>Contact Person</label></td>
+                                        <td><input type="text" class="form-control" name="" placeholder="Enter Full Name"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>MC#</label></td>
+                                        <td><input type="text" class="form-control" name="" placeholder="Enter MC#"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>Country<sup style="color: red">*</sup></label></td>
+                                        <td>
+                                            <select class="form-control" required>
+                                                <option value="">Select Country</option><option value="1" selected="">United States</option>
+                                                <option value="2">Canada</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>State<sup style="color: red">*</sup></label></td>
+                                        <td>
+                                            <select class="form-control" required>
+                                                <option value=""></option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>City<sup style="color: red">*</sup></label></td>
+                                        <td>
+                                            <select class="form-control" required>
+                                                <option value=""></option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>Zip Code<sup style="color: red">*</sup></label></td>
+                                        <td><input type="number" class="form-control" name="" placeholder="Enter Zip Code" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Business Coverage</td>
+                                        <td><input type="checkbox" name="" checked> Local Mover<br>
+                                        <input type="checkbox" name="" checked> Long Distance Mover<br>
+                                        <input type="checkbox" name="" checked> Cross-Border to Cannada</td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>E-mail Address<sup style="color: red">*</sup></label></td>
+                                        <td><input type="email" class="form-control" name="" placeholder="xxxxxx@example.com" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>Password<sup style="color: red">*</sup></label></td>
+                                        <td><input type="password" class="form-control" name="" placeholder="********" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>Confirm Password<sup style="color: red">*</sup></label></td>
+                                        <td><input type="password" class="form-control" name="" placeholder="********" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>Company Logo</label></td>
+                                        <td><input type="file" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td><input type="checkbox" name="" required> I agree to the <a href="t&c.html" target="_blank">terms of use</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td><img name="HELPER-captcha_image" id="capt" src="captcha.php" border="0">
+                                        <a href="javascript://" onclick="refreshCaptcha('captcha.php');">Refresh</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td><input type="text" name="" placeholder="Enter Captcha Code" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td><input type="submit" class="btn btn-success" name="" value="Signup"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                </div><hr>
+                <div class="row text-center">
+                    <div class="col-sm-12"><img src="img/CAPTURE2.png"></div>
+                </div>
+        </div><br>
+        <!--mover_resister end-->
+
+        <!--footer start-->
+        <div class="jumbotron" style="margin-bottom:0; background-color: black">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <h4 style="color: #ffffff">Legal Status</h4>
+                        <ul style="color: #ffffff; font-size: 13px">
+                            <li><a href="https://moverzfax.com/state-registration.html">State Registration</a></li>
+                            <li><a href="http://ai.fmcsa.dot.gov/hhg/search.asp">Federal Registration</a></li>
+                            <li><a href="http://ai.fmcsa.dot.gov/">Analysis and Information: <br>Federal Movers</a></li>
+                            <li><a href="http://www.movingscam.com/superlist">MovingScam Status</a></li>										
+                            <li><a href="http://li-public.fmcsa.dot.gov/LIVIEW/pkg_carrquery.prc_carrlist">Licensing and Information</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                        <h4 style="color: #ffffff">MoverZfax.com</h4>
+                        <ul style="color: #ffffff; font-size: 13px">
+                            <li><a href="faq.html">Frequently Asked Questions</a></li>
+                            <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                            <li><a href="contact_us.html">Contact Us</a></li>
+                            <li><a href="t&c.html">Terms of Use</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h4 style="color: #ffffff">Moving Associations</h4>
+                        <ul style="color: #ffffff; font-size: 13px">
+                            <li><a href="http://www.bbb.org/">Better Business Bureau</a></li>
+                            <li><a href="http://www.mover.net/">Canadian Association of Movers</a></li>
+                            <li><a href="http://www.moving.org/">American Moving &amp; Storage Assoc.</a></li>
+                            <li><a href="http://promover.org/">Promover.org</a></li>
+                            <li><a href="http://www.iamovers.org/">International Association of Movers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h4 style="color: #ffffff">Recommendation Portals</h4>
+                        <ul style="color: #ffffff; font-size: 13px">
+                            <li><a href="http://mymovingreviews.com/">My Moving Reviews</a></li>
+                            <li><a href="http://www.yelp.com/dc">Yelp</a></li>
+                            <li><a href="http://www.insiderpages.com/">Insider Pages</a></li>
+                            <li><a href="http://www.kudzu.com/">Kudzu</a></li>
+                            <li><a href="http://www.moverreviews.com/">Mover Reviews</a></li>
+                            <li><a href="http://www.ripoffreport.com/">Ripoff Report</a></li>
+                            <li><a href="http://www.reviewamover.com/">Review a Mover</a></li>
+                            <li><a href="http://www.moverssearchandreviews.com/">Movers Search and Reviews</a></li>
+                            <!--<li><a href="http://epinions.com/Moving_Companies">Epinions</a></li>-->
+                            <li><a href="http://bestmovingcompaniesreviews.com/category/movers-reviews/">Best Moving Companies</a></li>
+                            <li><a href="http://www.angieslist.com/moving/">Angies List</a></li>
+                            <li><a href="http://transportreviews.com/">Transport Reviews</a></li>
+                            <li><a href="http://transportreports.com/">Transport Reports</a></li>
+                            <li><a href="http://movingguardian.org/">Moving Guardian</a></li>
+                            <li><a href="http://www.bestmoverspackers.com/moving-reviews.html">Best Movers Packers</a></li>
+                <li><a href="http://www.movers.com/moving-reviews.html">Movers Reviews</a></li>
+                <li><a href="http://www.moverrankings.com/latest-moving-company-reviews.php">Mover Rankings</a></li>
+                <li><a href="http://www.movingcompanyreviews.com/">Moving Company Reviews</a></li>
+                            <li><a href="https://moverzfax.com/add-a-review.html">MoverZfax Reviews</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                        <h4 style="color: #ffffff">Protect Yourself</h4>
+                        <ul style="color: #ffffff; font-size: 13px">
+                            <li><a href="https://www.protectyourmove.gov/related-sites/contactstate_view.aspx">Customer Resource (PER STATE)</a></li>
+                            <li><a href="https://nccdb.fmcsa.dot.gov/NCCDB/ComplaintEntry.aspx?choice=CONSUMER">Write a Complaints to USDOT</a></li>
+                            <li><a href="http://ai.fmcsa.dot.gov/hhg/search.asp">Search For Complaints</a></li>
+                            <li><a href="http://safer.fmcsa.dot.gov/CompanySnapshot.aspx">Federal Motor Carrier Snapshot</a></li>
+                            <li><a href="https://ai.fmcsa.dot.gov/SMS/Search/Index.aspx">Safety Data For Movers</a></li>
+                            <li><a href="https://www.pissedconsumer.com/post-complaint.html">Pissed Consumer</a></li>
+                            <li><a href="http://www.consumeraffairs.com/movers/">Consumer Affairs</a></li>
+                            <li><a href="http://www.complaintsboard.com/?search=Moving+companies&amp;complaints=Complaints">Complaints Board</a></li>
+                        </ul>
+                    </div>
+                </div><hr>
+                <div class="row">
+                    <div class="text-left" style="color: white">©2019 All Rights Reserverd.</div>
+                    <div class="container text-right" style="color: white">Follow us on
+                        <img src="img/stumble-upon.png">
+                        <img src="img/linkedin.png">
+                        <img src="img/twitter.png">
+                        <img src="img/google-plus.png">
+                        <img src="img/facebook.png">
+                    </div>
+                </div>
+        </div>
+        <!--footer end-->
+    </body>
+
+</html>

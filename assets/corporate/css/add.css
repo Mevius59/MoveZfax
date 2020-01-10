@@ -1,0 +1,100 @@
+
+.site-logo {
+    float: left;
+    font-size: 23px;
+    font-weight: 400;
+    margin-right: 67px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.additional-shop-info ul{
+    margin:0;
+}
+.additional-shop-info i{
+    height: auto;
+}
+.underline{
+    border-bottom: solid 1px #dbdbdb;
+}
+.btn-full{
+    width:100%;
+}
+.filter-container{
+    padding-top: 10px;
+    border-top: solid 1px #e4e6e8;
+    display: none;
+}
+.filter-container .form-group{
+    margin-top: 15px;
+}
+.filter-container .form-group label{
+    line-height: 35px;
+}
+.blog-tags i{
+    height: auto;
+}
+.blog-tags li{
+    display: none;
+}
+.search-result{
+    padding: 20px;
+    background: whitesmoke;
+    margin-bottom: 30px;
+}
+.mover-content{
+    box-shadow: 1px 1px 3px 3px #e4e6e8;
+    padding-top: 20px;
+    border: solid 1px #e4e6e8;
+    background: whitesmoke;
+}
+.search-form{
+    border-bottom: solid 1px #e4e6e8;
+}
+.search-item{
+    background: white;
+    padding: 10px;
+    border: solid 1px #ded9d9;
+    margin-top: 10px;
+}
+.item-image{
+    border: solid 1px #cccccc;
+}
+.item-title{
+    word-break: normal;
+    color: #37a000!important;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 15px;
+}
+.item-country{
+    font-weight: 500;
+    margin-top: 10px;
+}
+.rating{
+    width: 100px;
+    background: url(../img/rating.png);
+    background-position: 0px 0px;
+    background-size: cover;
+    height: 20px;
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.separator{
+    border-top: solid 1px #e4e6e8;
+    padding-top: 15px;
+}
+.initial{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.initial li{
+    position: relative;
+    margin: 0 16px 7px 0;
+    display: inline-block;
+}
+.initial li a{
+
+}

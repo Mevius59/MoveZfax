@@ -1,0 +1,1617 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<!-- Head BEGIN -->
+<head>
+  <meta charset="utf-8">
+  <title>MoverZfax-login</title>
+
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta content="MoverZfax UI description" name="description">
+  <meta content="MoverZfax Shop UI keywords" name="keywords">
+  <meta content="keenthemes" name="author">
+
+  <meta property="og:site_name" content="-CUSTOMER VALUE-">
+  <meta property="og:title" content="-CUSTOMER VALUE-">
+  <meta property="og:description" content="-CUSTOMER VALUE-">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="-CUSTOMER VALUE-"><!-- link to image for socio -->
+  <meta property="og:url" content="-CUSTOMER VALUE-">
+
+  <link rel="shortcut icon" href="m_icon.png">
+
+  <!-- Fonts START -->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
+  <!-- Fonts END -->
+
+  <!-- Global styles START -->          
+  <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Global styles END --> 
+   
+  <!-- Page level plugin styles START -->
+  <link href="assets/pages/css/animate.css" rel="stylesheet">
+  <link href="assets/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet">
+  <link href="assets/plugins/owl.carousel/assets/owl.carousel.css" rel="stylesheet">
+  <!-- Page level plugin styles END -->
+
+  <!-- Theme styles START -->
+  <link href="assets/pages/css/components.css" rel="stylesheet">
+  <link href="assets/pages/css/slider.css" rel="stylesheet">
+  <link href="assets/corporate/css/style.css" rel="stylesheet">
+  <link href="assets/corporate/css/style-responsive.css" rel="stylesheet">
+  <link href="assets/plugins/uniform/css/uniform.default.css" rel="stylesheet">
+  <link href="assets/corporate/css/themes/red.css" rel="stylesheet" id="style-color">
+  <!-- <link href="css/uikit.min.css" rel="stylesheet"> -->
+  <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="assets/corporate/css/modal.css" rel="stylesheet">
+  <link href="assets/corporate/css/add.css" rel="stylesheet">
+  <script language="javascript" type="text/javascript">
+    function windowClose() {
+    window.open('','_parent','');
+    window.close();
+    }
+</script>
+  <!-- Theme styles END -->
+</head>
+<!-- Head END -->
+
+<!-- Body BEGIN -->
+<body class="corporate">
+<!--review Modal-->
+<div class="modal fade" id="review_modal">
+    <div class="modal-dialog modal-dialog-centered modal-with">
+      <div class="modal-content">
+          <div class="container">
+              <!-- Modal Header -->
+                <div class="container">
+                    <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                            <h3 class="modal-title modal-title-color">Mover Review</h3>
+                            <h5>PICKUP AND DELIVERY</h5>
+                            <p>Please enter the pickup and delivery transaction.</p>
+                    </div>
+                </div>
+              <!-- modal body -->
+
+                  <div class="container">
+                      <div class="modal-header border-color">
+                          <div class="alert alert-block alert-info fade in">
+                              <button type="button" class="close" data-dismiss="alert"></button>
+                              <h4 class="alert-heading">How it works?</h4>
+                              <p>
+                                  Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.
+                              </p>
+                              <p> <span class="f-bol">1.</span>Choose the Pickup and Delivery Location.</p>
+                              <p><span class="f-bol">2.</span>Choosing the Pickup and Delivery location
+                                  enables the system to pull down the list of
+                                  movers on that particular location for you
+                                  to choose from.</p>
+                              <p><span class="f-bol">3.</span>If you didn't find the mover on our list?
+                                  then feel free to add it by yourself <a href="#">here.</a></p>
+                              <p><span class="f-bol">4.</span>Complete the rest of the details and click
+                                  the "Save Review" button.</p>
+                              <p>Please be as accurate as possible, and avoid
+                                  using foul and unprofessional words
+                                  when giving your overall comment.</p>
+                              <p>
+                                  <a class="btn purple" href="#">Do this</a>
+                                  <a class="btn dark" href="#">Cancel</a>
+                              </p>
+                          </div>
+                      </div>
+                      <div class="flex">
+                          <div class="modal-body">
+                              <!--add_review start-->
+                              <div class=" text-justify">
+                                  <form>
+                                      <div class="form-group">
+                                          <h4 class="modal-title-color">PICKUP AND DELIVERY</h4>
+                                          <p>Please enter the pickup and delivery transaction.</p>
+                                      </div>
+
+                                      <div class="form-group">
+                                          <div class="row">
+                                              <div class="col-sm-6">
+                                                  <label for="country" class="col-sm-5 control-label">Origin Pickup Country <span class="require">*</span></label>
+                                                  <div class="col-sm-7 pb-10">
+                                                      <select class="form-control" name="FIELD-country_id" id="country" onchange="getState(this.value);" >
+                                                          <option value="">Select Country</option>
+                                                          <option value="">United States</option>
+                                                          <option value="">Canada</option>
+                                                      </select>
+                                                  </div>
+                                              </div>
+                                              <div class="col-sm-6">
+                                                  <label for="state" class="col-sm-5 control-label">Origin Pickup State <span class="require">*</span></label>
+                                                  <div class="col-sm-7 pb-10">
+                                                      <select class="form-control" name="FIELD-state_id" id="state" onchange="getCity(this.value);">
+                                                      </select>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="state" class="col-sm-5 control-label">Pickup was<span class="require">*</span></label>
+                                          <div class="col-sm-7 pb-10">
+                                              <div class="col-sm-1">
+                                                  <input name="FIELD-pickup_was" value="early" type="radio">
+                                              </div>
+                                              <label for="state" class="col-sm-2 control-label"> <span class="require">*</span>Early</label>
+                                              <div class="col-sm-1">
+                                                  <input name="FIELD-pickup_was" value="late" type="radio">
+                                              </div>
+                                              <label for="state" class="col-sm-2 control-label"> <span class="require">*</span>Late</label>
+                                              <div class="col-sm-1">
+                                                  <input name="FIELD-pickup_was" value="on-time" type="radio">
+                                              </div>
+                                              <label for="state" class="col-sm-2 control-label"> <span class="require">*</span>On Time</label>
+                                              <div class="col-sm-1">
+                                                  <input name="FIELD-pickup_was" value="never" type="radio">
+                                              </div>
+                                              <label for="state" class="col-sm-2 control-label"> <span class="require">*</span>Never</label>
+                                          </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                          <div class="row">
+                                              <div class="col-sm-6">
+                                                  <label for="country" class="col-sm-5 control-label">Origin Delivery Country<span class="require">*</span></label>
+                                                  <div class="col-sm-7 pb-10">
+                                                      <select class="form-control" name="FIELD-country_id" id="country" onchange="getState(this.value);" >
+                                                          <option value="">Select Country</option>
+                                                          <option value="">United States</option>
+                                                          <option value="">Canada</option>
+                                                      </select>
+                                                  </div>
+                                              </div>
+                                              <div class="col-sm-6">
+                                                  <label for="state" class="col-sm-5 control-label">Origin Delivery State<span class="require">*</span></label>
+                                                  <div class="col-sm-7 pb-10">
+                                                      <select class="form-control" name="FIELD-state_id" id="state" onchange="getCity(this.value);">
+                                                      </select>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="state" class="col-sm-5 control-label">Pickup was<span class="require">*</span></label>
+                                          <div class="col-sm-7 pb-10">
+                                              <div class="col-sm-1">
+                                                  <input name="FIELD-pickup_was" value="early" type="radio">
+                                              </div>
+                                              <label for="state" class="col-sm-2 control-label"> <span class="require">*</span>Early</label>
+                                              <div class="col-sm-1">
+                                                  <input name="FIELD-pickup_was" value="late" type="radio">
+                                              </div>
+                                              <label for="state" class="col-sm-2 control-label"> <span class="require">*</span>Late</label>
+                                              <div class="col-sm-1">
+                                                  <input name="FIELD-pickup_was" value="on-time" type="radio">
+                                              </div>
+                                              <label for="state" class="col-sm-2 control-label"> <span class="require">*</span>On Time</label>
+                                              <div class="col-sm-1">
+                                                  <input name="FIELD-pickup_was" value="never" type="radio">
+                                              </div>
+                                              <label for="state" class="col-sm-2 control-label"> <span class="require">*</span>Never</label>
+                                          </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                          <label for="country" class="col-sm-5 control-label">Pickup to Delivery Time<span class="require">*</span></label>
+                                          <div class="col-sm-7 pb-10">
+                                              <input type="text" class="form-control" name="pickup_to_delivery_days" id="email">
+                                          </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                          <label for="state" class="col-sm-5 control-label">Condition at Delivery<span class="require">*</span></label>
+                                          <div class="col-sm-7">
+                                              <div class="col-sm-6">
+                                                  <div class="col-sm-3">
+                                                      <input name="condition" value="Damages" type="checkbox">
+                                                  </div>
+                                                  <label for="state" class="col-sm-9 control-label"> <span class="require">*</span>Damaged</label>
+                                                  <div class="col-sm-3">
+                                                      <input name="condition" value="Stolen Items" type="checkbox">
+                                                  </div>
+                                                  <label for="state" class="col-sm-9 control-label"> <span class="require">*</span>Stolen Items</label>
+                                              </div>
+                                              <div class="col-sm-6">
+                                                  <div class="col-sm-3">
+                                                      <input name="condition" value="Dirty or Wet Items" type="checkbox">
+                                                  </div>
+                                                  <label for="state" class="col-sm-9 control-label"> <span class="require">*</span>Dirty or Wet Items</label>
+                                                  <div class="col-sm-3">
+                                                      <input name="condition" value="In Good Condition" type="checkbox">
+                                                  </div>
+                                                  <label for="state" class="col-sm-9 control-label"> <span class="require">*</span>In Good Condition</label>
+                                              </div>
+                                          </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                          <h4 class="modal-title-color">COMPANY INFORMATION</h4>
+                                      </div>
+                                      <div class="form-group">
+                                          <p class="col-sm-5">Please select the moving company from the list provided. Automatically populated based on the Pickup and Delivery location selected.</p>
+                                          <div class="col-sm-7 pb-20">
+                                              <select class="form-control" name="" id="" onchange="" >
+                                                  <option value=""></option>
+                                              </select>
+                                          </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                          <h4 class="modal-title-color">COST INFORMATION</h4>
+                                          <p>Please indicate the cost and the package included.</p>
+                                      </div>
+                                      <div class="form-group">
+
+                                          <label for="country" class="col-sm-5 control-label">Moving Cost<span class="require">*</span></label>
+                                          <div class="col-sm-7">
+                                              <div class="col-sm-6 pb-10">
+                                                  <select class="form-control" name="cost" id="cost" onchange="" >
+                                                      <option value="">US</option>
+                                                      <option value="">CA</option>
+                                                  </select>
+                                              </div>
+                                              <div class="col-sm-6">
+                                                  <input type="text" class="form-control" name=" " id=" ">
+                                              </div>
+                                          </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                          <label for="state" class="col-sm-5 control-label">What is include in the price<span class="require">*</span></label>
+                                          <div class="col-sm-7">
+                                              <div class="row">
+                                                  <div class="col-sm-4 ml-0">
+                                                      <div class="col-sm-2">
+                                                          <input name="condition" value="Damages" type="checkbox">
+                                                      </div>
+                                                      <label for="state" class="col-sm-10 control-label"> <span class="require">*</span>Packing Materials</label>
+                                                      <div class="col-sm-2">
+                                                          <input name="condition" value="Stolen Items" type="checkbox">
+                                                      </div>
+                                                      <label for="state" class="col-sm-10 control-label"> <span class="require">*</span>Packing</label>
+                                                  </div>
+                                                  <div class="col-sm-4 ml-0">
+                                                      <div class="col-sm-2">
+                                                          <input name="condition" value="Dirty or Wet Items" type="checkbox">
+                                                      </div>
+                                                      <label for="state" class="col-sm-10 control-label"> <span class="require">*</span>Moving Insurance</label>
+                                                      <div class="col-sm-2">
+                                                          <input name="condition" value="In Good Condition" type="checkbox">
+                                                      </div>
+                                                      <label for="state" class="col-sm-10 control-label"> <span class="require">*</span>Storage</label>
+                                                  </div>
+                                                  <div class="col-sm-4 ml-0">
+                                                      <div class="col-sm-2">
+                                                          <input name="condition" value="In Good Condition" type="checkbox">
+                                                      </div>
+                                                      <label for="state" class="col-sm-10 control-label"> <span class="require">*</span>Car Transportation</label>
+                                                      <div class="col-sm-2">
+                                                          <input name="condition" value="In Good Condition" type="checkbox">
+                                                      </div>
+                                                      <label for="state" class="col-sm-10 control-label"> <span class="require">*</span>Pet Moving</label>
+                                                  </div>
+
+                                              </div>
+                                          </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                          <h4 class="modal-title-color">CUSTOMER SERVICE</h4>
+                                          <p>Please rate this company based on the following information.</p>
+                                      </div>
+
+                                      <div class="form-group">
+                                          <div class="form-group">
+                                              <label for="state" class="col-sm-5 control-label">HONESTY<span class="require">*</span></label>
+                                              <div class="col-sm-7">
+                                                  <div class="col-sm-1">
+                                                      <input name="condition" value="HONESTY" type="radio">
+                                                  </div>
+                                                  <label for="state" class="col-sm-2 control-label"> <span class="require">*</span>N/A</label>
+                                                  <div class="col-sm-1">
+                                                      <input name="condition" value="HONESTY" type="radio">
+                                                  </div>
+                                                  <label for="state" class="col-sm-2 control-label"> <span class="require">*</span>Poor</label>
+                                                  <div class="col-sm-1">
+                                                      <input name="condition" value="HONESTY" type="radio">
+                                                  </div>
+                                                  <label for="state" class="col-sm-2 control-label"> <span class="require">*</span>Average</label>
+                                                  <div class="col-sm-1">
+                                                      <input name="condition" value="HONESTY" type="radio">
+                                                  </div>
+                                                  <label for="state" class="col-sm-2 control-label"> <span class="require">*</span>Excellent</label>
+                                              </div>
+                                          </div>
+                                          <div class="form-group">
+                                              <label for="state" class="col-sm-5 control-label">Experience (Professionalism)<span class="require">*</span></label>
+                                              <div class="col-sm-7">
+                                                  <div class="col-sm-1">
+                                                      <input name="condition" value="HONESTY" type="radio">
+                                                  </div>
+                                                  <label for="state" class="col-sm-2 control-label"> <span class="require">*</span>N/A</label>
+                                                  <div class="col-sm-1">
+                                                      <input name="condition" value="HONESTY" type="radio">
+                                                  </div>
+                                                  <label for="state" class="col-sm-2 control-label"> <span class="require">*</span>Poor</label>
+                                                  <div class="col-sm-1">
+                                                      <input name="condition" value="HONESTY" type="radio">
+                                                  </div>
+                                                  <label for="state" class="col-sm-2 control-label"> <span class="require">*</span>Average</label>
+                                                  <div class="col-sm-1">
+                                                      <input name="condition" value="HONESTY" type="radio">
+                                                  </div>
+                                                  <label for="state" class="col-sm-2 control-label"> <span class="require">*</span>Excellent</label>
+                                              </div>
+                                          </div>
+                                          <div class="form-group">
+                                              <label for="state" class="col-sm-5 control-label">Promptness (Hold times)<span class="require">*</span></label>
+                                              <div class="col-sm-7">
+                                                  <div class="col-sm-1">
+                                                      <input name="condition" value="HONESTY" type="radio">
+                                                  </div>
+                                                  <label for="state" class="col-sm-2 control-label"> <span class="require">*</span>N/A</label>
+                                                  <div class="col-sm-1">
+                                                      <input name="condition" value="HONESTY" type="radio">
+                                                  </div>
+                                                  <label for="state" class="col-sm-2 control-label"> <span class="require">*</span>Poor</label>
+                                                  <div class="col-sm-1">
+                                                      <input name="condition" value="HONESTY" type="radio">
+                                                  </div>
+                                                  <label for="state" class="col-sm-2 control-label"> <span class="require">*</span>Average</label>
+                                                  <div class="col-sm-1">
+                                                      <input name="condition" value="HONESTY" type="radio">
+                                                  </div>
+                                                  <label for="state" class="col-sm-2 control-label"> <span class="require">*</span>Excellent</label>
+                                              </div>
+                                          </div>
+                                          <div class="form-group">
+                                              <label for="state" class="col-sm-5 control-label">Communication<span class="require">*</span></label>
+                                              <div class="col-sm-7">
+                                                  <div class="col-sm-1">
+                                                      <input name="condition" value="HONESTY" type="radio">
+                                                  </div>
+                                                  <label for="state" class="col-sm-2 control-label"> <span class="require">*</span>N/A</label>
+                                                  <div class="col-sm-1">
+                                                      <input name="condition" value="HONESTY" type="radio">
+                                                  </div>
+                                                  <label for="state" class="col-sm-2 control-label"> <span class="require">*</span>Poor</label>
+                                                  <div class="col-sm-1">
+                                                      <input name="condition" value="HONESTY" type="radio">
+                                                  </div>
+                                                  <label for="state" class="col-sm-2 control-label"> <span class="require">*</span>Average</label>
+                                                  <div class="col-sm-1">
+                                                      <input name="condition" value="HONESTY" type="radio">
+                                                  </div>
+                                                  <label for="state" class="col-sm-2 control-label"> <span class="require">*</span>Excellent</label>
+                                              </div>
+                                          </div>
+                                          <div class="form-group">
+                                              <label for="state" class="col-sm-5 control-label pb-10">Appearance<span class="require">*</span></label>
+                                              <div class="col-sm-7 pb-20">
+                                                  <div class="col-sm-1">
+                                                      <input name="condition" value="HONESTY" type="radio">
+                                                  </div>
+                                                  <label for="state" class="col-sm-2 control-label"> <span class="require">*</span>N/A</label>
+                                                  <div class="col-sm-1">
+                                                      <input name="condition" value="HONESTY" type="radio">
+                                                  </div>
+                                                  <label for="state" class="col-sm-2 control-label"> <span class="require">*</span>Poor</label>
+                                                  <div class="col-sm-1">
+                                                      <input name="condition" value="HONESTY" type="radio">
+                                                  </div>
+                                                  <label for="state" class="col-sm-2 control-label"> <span class="require">*</span>Average</label>
+                                                  <div class="col-sm-1">
+                                                      <input name="condition" value="HONESTY" type="radio">
+                                                  </div>
+                                                  <label for="state" class="col-sm-2 control-label"> <span class="require">*</span>Excellent</label>
+                                              </div>
+                                          </div>
+                                          <div class="form-group">
+                                              <label for="country" class="col-sm-5 control-label">Salesman<span class="require">*</span></label>
+                                              <div class="col-sm-7 pb-10">
+                                                  <input type="text" class="form-control" name=" " id="">
+                                              </div>
+                                          </div>
+                                          <div class="form-group">
+                                              <label for="country" class="col-sm-5 control-label pb-10">Secondary Contact Person<span class="require">*</span></label>
+                                              <div class="col-sm-7 pb-10">
+                                                  <input type="text" class="form-control" name=" " id=" ">
+                                              </div>
+                                          </div>
+                                          <div class="form-group">
+                                              <label for="country" class="col-sm-5 control-label pb-10">Company E-mail<span class="require">*</span></label>
+                                              <div class="col-sm-7 pb-10">
+                                                  <input type="email" class="form-control" name=" " id=" ">
+                                              </div>
+                                          </div>
+                                          <div class="form-group">
+                                              <label for="country" class="col-sm-5 control-label pb-10">How did you find this company?</label>
+                                              <div class="col-sm-7 pb-20">
+                                                  <input type="text" class="form-control" name=" " id="">
+                                              </div>
+                                          </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                          <div class="form-group">
+                                              <h4 class="modal-title-color">OVERALL RATING</h4>
+                                              <p>Please rate this moving company based on your overall experience.</p>
+                                          </div>
+                                          <div class="form-group">
+                                              <label for="state" class="col-sm-5 control-label">Overall Mover's Rating<span class="require">*</span></label>
+                                              <div class="col-sm-7">
+                                                  <div class="col-sm-4">
+                                                      <div class="col-sm-3">
+                                                          <input name="FIELD-rating_id" value="6" type="radio">
+                                                      </div>
+                                                      <label for="state" class="col-sm-9 control-label"> <span class="require">*</span>Do not use</label>
+                                                      <div class="col-sm-3">
+                                                          <input name="FIELD-rating_id" value="7" type="radio">
+                                                      </div>
+                                                      <label for="state" class="col-sm-9 control-label"> <span class="require">*</span>Poor</label>
+                                                  </div>
+                                                  <div class="col-sm-4">
+                                                      <div class="col-sm-3">
+                                                          <input name="FIELD-rating_id" value="9" type="radio">
+                                                      </div>
+                                                      <label for="state" class="col-sm-9 control-label"> <span class="require">*</span>Average</label>
+                                                      <div class="col-sm-3">
+                                                          <input name="FIELD-rating_id" value="10" type="radio">
+                                                      </div>
+                                                      <label for="state" class="col-sm-9 control-label"> <span class="require">*</span>Good</label>
+                                                  </div>
+                                                  <div class="col-sm-4">
+                                                      <div class="col-sm-3">
+                                                          <input name="FIELD-rating_id" value="8" type="radio">
+                                                      </div>
+                                                      <label for="state" class="col-sm-9 control-label"> <span class="require">*</span>Unsatisfactory</label>
+                                                      <div class="col-sm-3">
+                                                          <input name="FIELD-rating_id" value="11" type="radio">
+                                                      </div>
+                                                      <label for="state" class="col-sm-9 control-label"> <span class="require">*</span>Excellent</label>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <div class="form-group">
+                                              <h4 class="modal-title-color">REVIEWER'S COMMENT</h4>
+                                              <p>Please indicate your personal recommendation for this moving company.</p>
+                                          </div>
+                                      </div>
+                                      <div class="row">
+                                          <label class="col-sm-5 pb-20">Comment</label>
+                                          <div class="col-sm-7">
+                                              <textarea class="form-control height150"></textarea>
+                                          </div>
+                                      </div>
+                                  </form>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              <!--add_review end-->
+
+              <!-- Modal footer -->
+              <div class="modal-footer border-color">
+                  <div class="form-group">
+                      <div class="col-sm-4"></div>
+                      <div class="col-sm-4">
+                          <div class="col-sm-2 pb-20">
+                              <input type="checkbox" name="" value=" ">
+                          </div>
+                          <div class="col-sm-10 ">
+                              <p class="left">I agree to the<a href="t&c.html" target="_blank">terms of use</a></p>
+                          </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <a href="#"><button class="btn btn-danger modal-btn" data-dismiss="modal">Close</button></a>
+                        <a href="#"><button class="btn btn-success modal-btn" >Save Review</button></a>                          
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+</div>
+<!--Modal ends--> 
+
+   <!--end review modal-->
+  
+    <!-- BEGIN TOP BAR -->
+    <div class="pre-header">
+        <div class="container">
+            <div class="row">
+                <!-- BEGIN TOP BAR LEFT PART -->
+                <div class="col-md-6 col-sm-6 additional-shop-info">
+                    <ul class="list-unstyled list-inline">
+                        <li><i class="fa fa-phone"></i><span>866-828-9688</span></li>
+                        <li><i class="fa fa-envelope-o"></i><span>support@moverzfax.com</span></li>
+                    </ul>
+                </div>
+                <!-- END TOP BAR LEFT PART -->
+                <!-- BEGIN TOP BAR MENU -->
+                <div class="col-md-6 col-sm-6 additional-nav">
+                    <ul class="list-unstyled list-inline pull-right">
+                      <li><a href="#" data-toggle="modal" data-target="#login_modal">Sign In / Sign Up</a></li>
+                    </ul>
+                </div>
+                <!-- END TOP BAR MENU -->
+            </div>
+        </div>        
+    </div>
+    <!-- END TOP BAR -->
+    <!-- BEGIN HEADER -->
+    <div class="header">
+      <div class="container">
+        <a class="site-logo"  href="index.html"><img src="assets/corporate/img/logos/logo-corp-green.png" alt="Metronic FrontEnd" style="width: 180px;height: 47px;"></a>
+
+        <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
+
+        <!-- BEGIN NAVIGATION -->
+        <div class="header-navigation pull-right font-transform-inherit">
+          <ul>
+            <li class="active">
+              <a class="dropdown-toggle" href="index.html"> Home </a>
+            </li>
+            <li>
+              <a class="dropdown-toggle" href="about.html">
+                About                
+              </a>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                Services                
+              </a>
+                
+              <ul class="dropdown-menu">
+                <li><a href="find_a_mover.html">Find a Mover</a></li>
+                <li><a href="#">Order Report</a></li>
+                <li><a href="add_review.html">Add a Review</a></li>                           
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                Support                
+              </a>
+                
+              <ul class="dropdown-menu">
+                <li><a href="contact_us.html">Contact us</a></li>
+                <li><a href="support.html">Send a Message</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                More Links 
+                
+              </a>
+                
+              <ul class="dropdown-menu">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="link_to_us.html">Link to us</a></li>
+                <li><a href="#">Promotional Video</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Video Testimonials</a></li>
+              </ul>
+            </li>           
+            
+
+          </ul>
+        </div>
+        <!-- END NAVIGATION -->
+      </div>
+    </div>
+    <!-- Header END -->
+    <!--about start-->
+    <div class="main mt-20">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li class="active">Search</li>
+            </ul>
+            <!-- BEGIN SIDEBAR & CONTENT -->
+            <div class="row mover-content">
+                <div class="col-md-12">
+                    <h1 class="text-left" style="font-weight: 500">Find A Mover</h1>
+                    <!-- BEGIN search -->
+                    <form action="#" class="form-horizontal form-without-legend search-form">
+                        
+                        <div class="row">
+                            <div class="col-md-10 col-sm-9 col-xs-8">
+                                <div class="input-group">
+                                    <input type="text" id="usdot" name="usdot" class="form-control" placeholder="Search USDOT#" required>
+                                    <span class="input-group-btn">
+                                  <button type="button" class="btn btn-primary" onclick="findMover();"><i class="fa fa-search"></i> Search Mover</button>
+                              </span>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-3 col-xs-4">
+                                <button type="button" class="btn btn-primary btn-full" onclick="showFilter();"><i class="glyphicon glyphicon-tasks"></i> Filter</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="blog-tags col-md-12 margin-bottom-20 margin-top-10">
+                                <ul>
+                                    <li id="company_tag"><a href="javascript:;"><i class="fa fa-tags"></i></a></li>
+                                    <li id="country_tag"><a href="javascript:;"><i class="fa fa-tags"></i></a></li>
+                                    <li id="state_tag"><a href="javascript:;"><i class="fa fa-tags"></i></a></li>
+                                    <li id="city_tag"><a href="javascript:;"><i class="fa fa-tags"></i></a></li>
+                                    <li id="zip_tag"><a href="javascript:;"><i class="fa fa-tags"></i></a></li>
+                                    <li id="sort_tag"><a href="javascript:;"><i class="fa fa-tags"></i></a></li>
+                                    <li id="mcdot_tag"><a href="javascript:;"><i class="fa fa-tags"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="row filter-container">
+                            <div class="col-md-12">
+                                <h4>SEARCH CRITERIA</h4>
+                                <p>
+                                    If you are not sure of the moving company USDOT number or MC, just select your state of origination and press Search. The system will find all the certified and accredited moving company in your area based on their intrastate or interstate licenses.
+                                </p>
+                                <div class="form-group">
+                                    <label for="keyword" class="col-md-2 text-right">Company Name</label>
+                                    <div class="col-md-10">
+                                        <input type="text" id="keyword" class="form-control tag-input" placeholder="Search Company Name...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="form-group">
+                                    <label for="country" class="col-md-3 text-right">Country</label>
+                                    <div class="col-md-9">
+                                        <select class="form-control" name="country" id="country" onchange="getState(this.value);" >
+                                            <option value="" selected>Select Country</option>
+                                            <option value="1" >United States</option>
+                                            <option value="2">Canada</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="state" class="col-md-3 text-right">State</label>
+                                    <div class="col-md-9">
+                                        <select class="form-control" name="country" id="state" onchange="getCity(this.value);" >
+                                            <option value=""></option>
+                                            <option value="AL">Alabama</option>
+                                            <option value="AK">Alaska</option>
+                                            <option value="AZ">Arizona</option>
+                                            <option value="AR">Arkansas</option>
+                                            <option value="CA">California</option>
+                                            <option value="CO">Colorado</option>
+                                            <option value="CT">Connecticut</option>
+                                            <option value="DE">Delaware</option>
+                                            <option value="FL">Florida</option>
+                                            <option value="GA">Georgia</option>
+                                            <option value="HI">Hawaii</option>
+                                            <option value="ID">Idaho</option>
+                                            <option value="IL">Illinois</option>
+                                            <option value="IN">Indiana</option>
+                                            <option value="IA">Iowa</option>
+                                            <option value="KS">Kansas</option>
+                                            <option value="KY">Kentucky</option>
+                                            <option value="LA">Louisiana</option>
+                                            <option value="ME">Maine</option>
+                                            <option value="MD">Maryland</option>
+                                            <option value="MA">Massachusetts</option>
+                                            <option value="MI">Michigan</option>
+                                            <option value="MN">Minnesota</option>
+                                            <option value="MS">Mississippi</option>
+                                            <option value="MO">Missouri</option>
+                                            <option value="MT">Montana</option>
+                                            <option value="NE">Nebraska</option>
+                                            <option value="NV">Nevada</option>
+                                            <option value="NH">New Hampshire</option>
+                                            <option value="NJ">New Jersey</option>
+                                            <option value="NM">New Mexico</option>
+                                            <option value="NY">New York</option>
+                                            <option value="NC">North Carolina</option>
+                                            <option value="ND">North Dakota</option>
+                                            <option value="OH">Ohio</option>
+                                            <option value="OK">Oklahoma</option>
+                                            <option value="OR">Oregon</option>
+                                            <option value="PA">Pennsylvania</option>
+                                            <option value="RI">Rhode Island</option>
+                                            <option value="SC">South Carolina</option>
+                                            <option value="SD">South Dakota</option>
+                                            <option value="TN">Tennessee</option>
+                                            <option value="TX">Texas</option>
+                                            <option value="UT">Utah</option>
+                                            <option value="VT">Vermont</option>
+                                            <option value="VA">Virginia</option>
+                                            <option value="WA">Washington</option>
+                                            <option value="WV">West Virginia</option>
+                                            <option value="WI">Wisconsin</option>
+                                            <option value="WY">Wyoming</option>
+                                            <option value="DC">District of Columbia</option>
+                                            <option value="AB">Alberta</option>
+                                            <option value="BC">British Columbia</option>
+                                            <option value="MB">Manitoba</option>
+                                            <option value="NB">New Brunswick</option>
+                                            <option value="NL">New Foundland</option>
+                                            <option value="NT">NorthWest Territories</option>
+                                            <option value="NS">Nova Scotia</option>
+                                            <option value="ON">Ontario</option>
+                                            <option value="PE">Prince Edward Island</option>
+                                            <option value="QC">Quebec</option>
+                                            <option value="SK">Saskatchewan</option>
+                                            <option value="YT">Yukon</option>
+                                            <option value="NU">Nunavut</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="city" class="col-md-3 text-right">City</label>
+                                    <div class="col-md-9">
+                                        <select class="form-control" name="city" id="city" onchange="setTag('city');">
+                                            <option value="2822">Abingdon</option>
+                                            <option value="2823">Addieville</option>
+                                            <option value="2824">Akin</option>
+                                            <option value="2825">Albers</option>
+                                            <option value="2826">Aledo</option>
+                                            <option value="2827">Alexis</option>
+                                            <option value="2828">Algonquin</option>
+                                            <option value="2829">Alhambra</option>
+                                            <option value="2830">Alsey</option>
+                                            <option value="2831">Alsip</option>
+                                            <option value="2832">Altamont</option>
+                                            <option value="2833">Alto pass</option>
+                                            <option value="2834">Altona</option>
+                                            <option value="2835">Alvin</option>
+                                            <option value="2836">Anchor</option>
+                                            <option value="2837">Ancona</option>
+                                            <option value="2838">Andalusia</option>
+                                            <option value="2839">Anna</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="form-group">
+                                    <label for="zipcode" class="col-md-3 text-right">ZipCode</label>
+                                    <div class="col-md-9">
+                                        <input type="text" id="zipcode" class="form-control tag-input" placeholder="Zipcode">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sortby" class="col-md-3 text-right">Sort By</label>
+                                    <div class="col-md-9">
+                                        <select class="form-control" name="sortby" id="sortby" onchange="setTag('sort');" >
+                                            <option value="">Sort By</option>
+                                            <option value="local">Local Mover</option>
+                                            <option value="long_distance">Long Distance Mover</option>
+                                            <option value="cross_border">Cross-Border to Canada</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="mcdot" class="col-md-3 text-right">MCDOT#</label>
+                                    <div class="col-md-9">
+                                        <input type="text" id="mcdot" class="form-control tag-input" placeholder="MCDOT#">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <h4 class="col-md-12 separator">BROWSE BY INITIALS</h4>
+                                <p>Browse our list of movers through initial letters or numbers.</p><p>If a navigation item is grayed out, then that means that there are no movers with those initials under the specified country or state.</p>
+                                <ul class="col-md-12 initial">
+                                    <li><a href="#">#</a> </li>
+                                    <li><a href="#">0</a> </li>
+                                    <li><a href="#">1</a> </li>
+                                    <li><a href="#">2</a> </li>
+                                    <li><a href="#">3</a> </li>
+                                    <li><a href="#">4</a> </li>
+                                    <li><a href="#">5</a> </li>
+                                    <li><a href="#">6</a> </li>
+                                    <li><a href="#">7</a> </li>
+                                    <li><a href="#">8</a> </li>
+                                    <li><a href="#">9</a> </li>
+                                </ul>
+                                <ul class="col-md-12 initial">
+                                    <li><a href="#">A</a> </li>
+                                    <li><a href="#">B</a> </li>
+                                    <li><a href="#">C</a> </li>
+                                    <li><a href="#">D</a> </li>
+                                    <li><a href="#">E</a> </li>
+                                    <li><a href="#">F</a> </li>
+                                    <li><a href="#">G</a> </li>
+                                    <li><a href="#">H</a> </li>
+                                    <li><a href="#">I</a> </li>
+                                    <li><a href="#">J</a> </li>
+                                    <li><a href="#">K</a> </li>
+                                    <li><a href="#">L</a> </li>
+                                    <li><a href="#">M</a> </li>
+                                    <li><a href="#">N</a> </li>
+                                    <li><a href="#">O</a> </li>
+                                    <li><a href="#">P</a> </li>
+                                    <li><a href="#">Q</a> </li>
+                                    <li><a href="#">R</a> </li>
+                                    <li><a href="#">S</a> </li>
+                                    <li><a href="#">T</a> </li>
+                                    <li><a href="#">U</a> </li>
+                                    <li><a href="#">V</a> </li>
+                                    <li><a href="#">W</a> </li>
+                                    <li><a href="#">X</a> </li>
+                                    <li><a href="#">Y</a> </li>
+                                    <li><a href="#">Z</a> </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-8 col-md-offset-2">
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-tasks"></i> Close Filter </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- END search -->
+                </div>
+                <!-- END SIDEBAR & CONTENT -->
+                <div class="col-md-12 search-result">
+                    <div class="row search-item">
+                        <div class="col-md-2">
+                            <div class="col-md-12">
+                                <img class="item-image" src="assets/corporate/img/no_logo.jpg" width="100">
+                            </div>
+                            <div class="col-md-12 margin-top-10">
+                                <span class="col-md-12">Rate: <strong>5.0</strong></span>
+                                <div class="rating"></div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-10">
+                            <div class="row">
+                                <a href="#" class="col-md-6 item-title">Advance Moving & Storage</a>
+                                <div class="col-md-6">
+                                    <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add Cart </button>
+                                    <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#review_modal"><i class="fa fa-star-o"></i> Add Review </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span class="col-md-6 item-country">Country : <strong>United States</strong></span>
+                                <span class="col-md-6 item-country">State : <strong>Alabama</strong></span>
+                            </div>
+                            <div class="row">
+                                <span class="col-md-6 item-country">City : <strong>Aox</strong></span>
+                                <span class="col-md-6 item-country">Zipcode : <strong>12345</strong></span>
+                            </div>
+                            <div class="row">
+                                <span class="col-md-6 item-country">Website : <strong><a href="http://awisemoveinc.com/" target="_blank">http://awisemoveinc.com/</a> </strong></span>
+                                <span class="col-md-6 item-country">Phone : <strong>(031)-235-4254</strong></span>
+                            </div>
+                            <div class="row">
+                                <span class="col-md-6 item-country">USDOT# : <strong>12345</strong></span>
+                                <span class="col-md-6 item-country">MCDOT# : <strong>12345</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row search-item">
+                        <div class="col-md-2">
+                            <div class="col-md-12">
+                                <img class="item-image" src="assets/corporate/img/no_logo.jpg" width="100">
+                            </div>
+                            <div class="col-md-12 margin-top-10">
+                                <span class="col-md-12">Rate: <strong>4.0</strong></span>
+                                <div class="rating" style="background-position: 0 -20px;"></div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-10">
+                            <div class="row">
+                                <a href="#" class="col-md-6 item-title">Advance Moving & Storage</a>
+                                <div class="col-md-6">
+                                    <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add Cart </button>
+                                    <button type="button" class="btn btn-primary"><i class="fa fa-star-o"></i> Add Review </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span class="col-md-6 item-country">Country : <strong>United States</strong></span>
+                                <span class="col-md-6 item-country">State : <strong>Alabama</strong></span>
+                            </div>
+                            <div class="row">
+                                <span class="col-md-6 item-country">City : <strong>Aox</strong></span>
+                                <span class="col-md-6 item-country">Zipcode : <strong>12345</strong></span>
+                            </div>
+                            <div class="row">
+                                <span class="col-md-6 item-country">Website : <strong><a href="http://awisemoveinc.com/" target="_blank">http://awisemoveinc.com/</a> </strong></span>
+                                <span class="col-md-6 item-country">Phone : <strong>(031)-235-4254</strong></span>
+                            </div>
+                            <div class="row">
+                                <span class="col-md-6 item-country">USDOT# : <strong>12345</strong></span>
+                                <span class="col-md-6 item-country">MCDOT# : <strong>12345</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row search-item">
+                        <div class="col-md-2">
+                            <div class="col-md-12">
+                                <img class="item-image" src="assets/corporate/img/no_logo.jpg" width="100">
+                            </div>
+                            <div class="col-md-12 margin-top-10">
+                                <span class="col-md-12">Rate: <strong>3.0</strong></span>
+                                <div class="rating" style="background-position: 0 -45px;"></div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-10">
+                            <div class="row">
+                                <a href="#" class="col-md-6 item-title">Advance Moving & Storage</a>
+                                <div class="col-md-6">
+                                    <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add Cart </button>
+                                    <button type="button" class="btn btn-primary"><i class="fa fa-star-o"></i> Add Review </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span class="col-md-6 item-country">Country : <strong>United States</strong></span>
+                                <span class="col-md-6 item-country">State : <strong>Alabama</strong></span>
+                            </div>
+                            <div class="row">
+                                <span class="col-md-6 item-country">City : <strong>Aox</strong></span>
+                                <span class="col-md-6 item-country">Zipcode : <strong>12345</strong></span>
+                            </div>
+                            <div class="row">
+                                <span class="col-md-6 item-country">Website : <strong><a href="http://awisemoveinc.com/" target="_blank">http://awisemoveinc.com/</a> </strong></span>
+                                <span class="col-md-6 item-country">Phone : <strong>(031)-235-4254</strong></span>
+                            </div>
+                            <div class="row">
+                                <span class="col-md-6 item-country">USDOT# : <strong>12345</strong></span>
+                                <span class="col-md-6 item-country">MCDOT# : <strong>12345</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row search-item">
+                        <div class="col-md-2">
+                            <div class="col-md-12">
+                                <img class="item-image" src="assets/corporate/img/no_logo.jpg" width="100">
+                            </div>
+                            <div class="col-md-12 margin-top-10">
+                                <span class="col-md-12">Rate: <strong>2.0</strong></span>
+                                <div class="rating" style="background-position: 0 -66px;"></div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-10">
+                            <div class="row">
+                                <a href="#" class="col-md-6 item-title">Advance Moving & Storage</a>
+                                <div class="col-md-6">
+                                    <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add Cart </button>
+                                    <button type="button" class="btn btn-primary"><i class="fa fa-star-o"></i> Add Review </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span class="col-md-6 item-country">Country : <strong>United States</strong></span>
+                                <span class="col-md-6 item-country">State : <strong>Alabama</strong></span>
+                            </div>
+                            <div class="row">
+                                <span class="col-md-6 item-country">City : <strong>Aox</strong></span>
+                                <span class="col-md-6 item-country">Zipcode : <strong>12345</strong></span>
+                            </div>
+                            <div class="row">
+                                <span class="col-md-6 item-country">Website : <strong><a href="http://awisemoveinc.com/" target="_blank">http://awisemoveinc.com/</a> </strong></span>
+                                <span class="col-md-6 item-country">Phone : <strong>(031)-235-4254</strong></span>
+                            </div>
+                            <div class="row">
+                                <span class="col-md-6 item-country">USDOT# : <strong>12345</strong></span>
+                                <span class="col-md-6 item-country">MCDOT# : <strong>12345</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row search-item">
+                        <div class="col-md-2">
+                            <div class="col-md-12">
+                                <img class="item-image" src="assets/corporate/img/no_logo.jpg" width="100">
+                            </div>
+                            <div class="col-md-12 margin-top-10">
+                                <span class="col-md-12">Rate: <strong>1.0</strong></span>
+                                <div class="rating" style="background-position: 0 -89px;"></div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-10">
+                            <div class="row">
+                                <a href="#" class="col-md-6 item-title">Advance Moving & Storage</a>
+                                <div class="col-md-6">
+                                    <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add Cart </button>
+                                    <button type="button" class="btn btn-primary"><i class="fa fa-star-o"></i> Add Review </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span class="col-md-6 item-country">Country : <strong>United States</strong></span>
+                                <span class="col-md-6 item-country">State : <strong>Alabama</strong></span>
+                            </div>
+                            <div class="row">
+                                <span class="col-md-6 item-country">City : <strong>Aox</strong></span>
+                                <span class="col-md-6 item-country">Zipcode : <strong>12345</strong></span>
+                            </div>
+                            <div class="row">
+                                <span class="col-md-6 item-country">Website : <strong><a href="http://awisemoveinc.com/" target="_blank">http://awisemoveinc.com/</a> </strong></span>
+                                <span class="col-md-6 item-country">Phone : <strong>(031)-235-4254</strong></span>
+                            </div>
+                            <div class="row">
+                                <span class="col-md-6 item-country">USDOT# : <strong>12345</strong></span>
+                                <span class="col-md-6 item-country">MCDOT# : <strong>12345</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center margin-top-10">
+                
+            </div>
+        </div>
+    </div>
+        <div class="container">
+          <ul class="breadcrumb">
+              <li><a href="index.html">Home</a></li>              
+              <li class="active">Search</li>
+          </ul>
+          <!-- BEGIN SIDEBAR & CONTENT -->
+          <div class="row mover-content">
+              <div class="col-md-12">
+                  <h1 class="text-left" style="font-weight: 500">Find A Mover</h1>
+                  <!-- BEGIN search -->
+                  <form action="#" class="form-horizontal form-without-legend search-form">
+                      <div class="row">
+                          <div class="col-md-10 col-sm-9 col-xs-8">
+                              <div class="input-group">
+                                  <input type="text" class="form-control" placeholder="Search USDOT#">
+                                  <span class="input-group-btn">
+                                  <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i> Search Mover</button>
+                              </span>
+                              </div>
+                          </div>
+                          <div class="col-md-2 col-sm-3 col-xs-4">
+                              <button type="button" class="btn btn-primary btn-full" onclick="showFilter();"><i class="glyphicon glyphicon-tasks"></i> Filter</button>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="blog-tags col-md-12 margin-bottom-20 margin-top-10">
+                              <ul>
+                                  <li><a href="javascript:;"><i class="fa fa-tags"></i>OS</a></li>
+                                  <li><a href="javascript:;"><i class="fa fa-tags"></i>Metronic</a></li>
+                                  <li><a href="javascript:;"><i class="fa fa-tags"></i>Dell</a></li>
+                                  <li><a href="javascript:;"><i class="fa fa-tags"></i>Conquer</a></li>
+                                  <li><a href="javascript:;"><i class="fa fa-tags"></i>MS</a></li>
+                                  <li><a href="javascript:;"><i class="fa fa-tags"></i>Google</a></li>
+                                  <li><a href="javascript:;"><i class="fa fa-tags"></i>Keenthemes</a></li>
+                                  <li><a href="javascript:;"><i class="fa fa-tags"></i>Twitter</a></li>
+                              </ul>
+                          </div>
+                      </div>
+
+                      <div class="row filter-container">
+                          <div class="col-md-12">
+                              <h4>SEARCH CRITERIA</h4>
+                                <p>
+                                    If you are not sure of the moving company USDOT number or MC, just select your state of origination and press Search. The system will find all the certified and accredited moving company in your area based on their intrastate or interstate licenses.
+                                </p>
+                              <div class="form-group">
+                                  <label for="keyword" class="col-md-2 text-right">Company Name</label>
+                                  <div class="col-md-10">
+                                      <input type="text" id="keyword" class="form-control" placeholder="Search Company Name...">
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-6 col-sm-12">
+                              <div class="form-group">
+                                  <label for="country" class="col-md-3 text-right">Country</label>
+                                  <div class="col-md-9">
+                                      <select class="form-control" name="country" id="country" onchange="getState(this.value);" >
+                                          <option value="">Select Country</option>
+                                          <option value="1" selected>United States</option>
+                                          <option value="2">Canada</option>
+                                      </select>
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <label for="state" class="col-md-3 text-right">State</label>
+                                  <div class="col-md-9">
+                                      <select class="form-control" name="country" id="state" onchange="getState(this.value);" >
+                                          <option value=""></option>
+                                          <option value="AL">Alabama</option>
+                                          <option value="AK">Alaska</option>
+                                          <option value="AZ">Arizona</option>
+                                          <option value="AR">Arkansas</option>
+                                          <option value="CA">California</option>
+                                          <option value="CO">Colorado</option>
+                                          <option value="CT">Connecticut</option>
+                                          <option value="DE">Delaware</option>
+                                          <option value="FL">Florida</option>
+                                          <option value="GA">Georgia</option>
+                                          <option value="HI">Hawaii</option>
+                                          <option value="ID">Idaho</option>
+                                          <option value="IL">Illinois</option>
+                                          <option value="IN">Indiana</option>
+                                          <option value="IA">Iowa</option>
+                                          <option value="KS">Kansas</option>
+                                          <option value="KY">Kentucky</option>
+                                          <option value="LA">Louisiana</option>
+                                          <option value="ME">Maine</option>
+                                          <option value="MD">Maryland</option>
+                                          <option value="MA">Massachusetts</option>
+                                          <option value="MI">Michigan</option>
+                                          <option value="MN">Minnesota</option>
+                                          <option value="MS">Mississippi</option>
+                                          <option value="MO">Missouri</option>
+                                          <option value="MT">Montana</option>
+                                          <option value="NE">Nebraska</option>
+                                          <option value="NV">Nevada</option>
+                                          <option value="NH">New Hampshire</option>
+                                          <option value="NJ">New Jersey</option>
+                                          <option value="NM">New Mexico</option>
+                                          <option value="NY">New York</option>
+                                          <option value="NC">North Carolina</option>
+                                          <option value="ND">North Dakota</option>
+                                          <option value="OH">Ohio</option>
+                                          <option value="OK">Oklahoma</option>
+                                          <option value="OR">Oregon</option>
+                                          <option value="PA">Pennsylvania</option>
+                                          <option value="RI">Rhode Island</option>
+                                          <option value="SC">South Carolina</option>
+                                          <option value="SD">South Dakota</option>
+                                          <option value="TN">Tennessee</option>
+                                          <option value="TX">Texas</option>
+                                          <option value="UT">Utah</option>
+                                          <option value="VT">Vermont</option>
+                                          <option value="VA">Virginia</option>
+                                          <option value="WA">Washington</option>
+                                          <option value="WV">West Virginia</option>
+                                          <option value="WI">Wisconsin</option>
+                                          <option value="WY">Wyoming</option>
+                                          <option value="DC">District of Columbia</option>
+                                          <option value="AB">Alberta</option>
+                                          <option value="BC">British Columbia</option>
+                                          <option value="MB">Manitoba</option>
+                                          <option value="NB">New Brunswick</option>
+                                          <option value="NL">New Foundland</option>
+                                          <option value="NT">NorthWest Territories</option>
+                                          <option value="NS">Nova Scotia</option>
+                                          <option value="ON">Ontario</option>
+                                          <option value="PE">Prince Edward Island</option>
+                                          <option value="QC">Quebec</option>
+                                          <option value="SK">Saskatchewan</option>
+                                          <option value="YT">Yukon</option>
+                                          <option value="NU">Nunavut</option>
+                                      </select>
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <label for="city" class="col-md-3 text-right">City</label>
+                                  <div class="col-md-9">
+                                      <select class="form-control" name="city" id="city">
+                                      </select>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-6 col-sm-12">
+                              <div class="form-group">
+                                  <label for="zipcode" class="col-md-3 text-right">ZipCode</label>
+                                  <div class="col-md-9">
+                                      <input type="text" id="zipcode" class="form-control" placeholder="Zipcode">
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <label for="sortby" class="col-md-3 text-right">Sort By</label>
+                                  <div class="col-md-9">
+                                      <select class="form-control" name="sortby" id="sortby"  >
+                                          <option value="">Sort By</option>
+                                          <option value="local">Local Mover</option>
+                                          <option value="long_distance">Long Distance Mover</option>
+                                          <option value="cross_border">Cross-Border to Canada</option>
+                                      </select>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-12">
+                              <h4 class="col-md-12 separator">BROWSE BY INITIALS</h4>
+                              <p>Browse our list of movers through initial letters or numbers.</p><p>If a navigation item is grayed out, then that means that there are no movers with those initials under the specified country or state.</p>
+                              <ul class="col-md-12 initial">
+                                  <li><a href="#">#</a> </li>
+                                  <li><a href="#">0</a> </li>
+                                  <li><a href="#">1</a> </li>
+                                  <li><a href="#">2</a> </li>
+                                  <li><a href="#">3</a> </li>
+                                  <li><a href="#">4</a> </li>
+                                  <li><a href="#">5</a> </li>
+                                  <li><a href="#">6</a> </li>
+                                  <li><a href="#">7</a> </li>
+                                  <li><a href="#">8</a> </li>
+                                  <li><a href="#">9</a> </li>
+                              </ul>
+                              <ul class="col-md-12 initial">
+                                  <li><a href="#">A</a> </li>
+                                  <li><a href="#">B</a> </li>
+                                  <li><a href="#">C</a> </li>
+                                  <li><a href="#">D</a> </li>
+                                  <li><a href="#">E</a> </li>
+                                  <li><a href="#">F</a> </li>
+                                  <li><a href="#">G</a> </li>
+                                  <li><a href="#">H</a> </li>
+                                  <li><a href="#">I</a> </li>
+                                  <li><a href="#">J</a> </li>
+                                  <li><a href="#">K</a> </li>
+                                  <li><a href="#">L</a> </li>
+                                  <li><a href="#">M</a> </li>
+                                  <li><a href="#">N</a> </li>
+                                  <li><a href="#">O</a> </li>
+                                  <li><a href="#">P</a> </li>
+                                  <li><a href="#">Q</a> </li>
+                                  <li><a href="#">R</a> </li>
+                                  <li><a href="#">S</a> </li>
+                                  <li><a href="#">T</a> </li>
+                                  <li><a href="#">U</a> </li>
+                                  <li><a href="#">V</a> </li>
+                                  <li><a href="#">W</a> </li>
+                                  <li><a href="#">X</a> </li>
+                                  <li><a href="#">Y</a> </li>
+                                  <li><a href="#">Z</a> </li>
+                              </ul>
+                          </div>
+                          <div class="col-md-8 col-md-offset-2">
+                              <div class="form-group">
+                                  <button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-tasks"></i> Close Filter </button>
+                              </div>
+
+                          </div>
+                      </div>
+                  </form>
+                  <!-- END search -->
+              </div>
+              <!-- END SIDEBAR & CONTENT -->
+              <div class="col-md-12 search-result">
+                  <div class="row search-item">
+                      <div class="col-md-2">
+                          <div class="col-md-12">
+                              <img class="item-image" src="assets/corporate/img/no_logo.jpg" width="100">
+                          </div>
+                          <div class="col-md-12 margin-top-10">
+                              <span class="col-md-12">Rate: <strong>5.0</strong></span>
+                              <div class="rating"></div>
+                          </div>
+
+                      </div>
+                      <div class="col-md-10">
+                          <div class="row">
+                              <a href="#" class="col-md-6 item-title">Advance Moving & Storage</a>
+                              <div class="col-md-6">
+                                  <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add Cart </button>
+                                  <button type="button" class="btn btn-primary"><i class="fa fa-star-o"></i> Add Review </button>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <span class="col-md-6 item-country">Country : <strong>United States</strong></span>
+                              <span class="col-md-6 item-country">State : <strong>Alabama</strong></span>
+                          </div>
+                          <div class="row">
+                              <span class="col-md-6 item-country">City : <strong>Aox</strong></span>
+                              <span class="col-md-6 item-country">Zipcode : <strong>12345</strong></span>
+                          </div>
+                          <div class="row">
+                              <span class="col-md-6 item-country">Website : <strong><a href="http://awisemoveinc.com/" target="_blank">http://awisemoveinc.com/</a> </strong></span>
+                              <span class="col-md-6 item-country">Phone : <strong>(031)-235-4254</strong></span>
+                          </div>
+                          <div class="row">
+                              <span class="col-md-6 item-country">USDOT# : <strong>12345</strong></span>
+                              <span class="col-md-6 item-country">MCDOT# : <strong>12345</strong></span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row search-item">
+                      <div class="col-md-2">
+                          <div class="col-md-12">
+                              <img class="item-image" src="assets/corporate/img/no_logo.jpg" width="100">
+                          </div>
+                          <div class="col-md-12 margin-top-10">
+                              <span class="col-md-12">Rate: <strong>4.0</strong></span>
+                              <div class="rating" style="background-position: 0 -20px;"></div>
+                          </div>
+
+                      </div>
+                      <div class="col-md-10">
+                          <div class="row">
+                              <a href="#" class="col-md-6 item-title">Advance Moving & Storage</a>
+                              <div class="col-md-6">
+                                  <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add Cart </button>
+                                  <button type="button" class="btn btn-primary"><i class="fa fa-star-o"></i> Add Review </button>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <span class="col-md-6 item-country">Country : <strong>United States</strong></span>
+                              <span class="col-md-6 item-country">State : <strong>Alabama</strong></span>
+                          </div>
+                          <div class="row">
+                              <span class="col-md-6 item-country">City : <strong>Aox</strong></span>
+                              <span class="col-md-6 item-country">Zipcode : <strong>12345</strong></span>
+                          </div>
+                          <div class="row">
+                              <span class="col-md-6 item-country">Website : <strong><a href="http://awisemoveinc.com/" target="_blank">http://awisemoveinc.com/</a> </strong></span>
+                              <span class="col-md-6 item-country">Phone : <strong>(031)-235-4254</strong></span>
+                          </div>
+                          <div class="row">
+                              <span class="col-md-6 item-country">USDOT# : <strong>12345</strong></span>
+                              <span class="col-md-6 item-country">MCDOT# : <strong>12345</strong></span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row search-item">
+                      <div class="col-md-2">
+                          <div class="col-md-12">
+                              <img class="item-image" src="assets/corporate/img/no_logo.jpg" width="100">
+                          </div>
+                          <div class="col-md-12 margin-top-10">
+                              <span class="col-md-12">Rate: <strong>3.0</strong></span>
+                              <div class="rating" style="background-position: 0 -45px;"></div>
+                          </div>
+
+                      </div>
+                      <div class="col-md-10">
+                          <div class="row">
+                              <a href="#" class="col-md-6 item-title">Advance Moving & Storage</a>
+                              <div class="col-md-6">
+                                  <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add Cart </button>
+                                  <button type="button" class="btn btn-primary"><i class="fa fa-star-o"></i> Add Review </button>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <span class="col-md-6 item-country">Country : <strong>United States</strong></span>
+                              <span class="col-md-6 item-country">State : <strong>Alabama</strong></span>
+                          </div>
+                          <div class="row">
+                              <span class="col-md-6 item-country">City : <strong>Aox</strong></span>
+                              <span class="col-md-6 item-country">Zipcode : <strong>12345</strong></span>
+                          </div>
+                          <div class="row">
+                              <span class="col-md-6 item-country">Website : <strong><a href="http://awisemoveinc.com/" target="_blank">http://awisemoveinc.com/</a> </strong></span>
+                              <span class="col-md-6 item-country">Phone : <strong>(031)-235-4254</strong></span>
+                          </div>
+                          <div class="row">
+                              <span class="col-md-6 item-country">USDOT# : <strong>12345</strong></span>
+                              <span class="col-md-6 item-country">MCDOT# : <strong>12345</strong></span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row search-item">
+                      <div class="col-md-2">
+                          <div class="col-md-12">
+                              <img class="item-image" src="assets/corporate/img/no_logo.jpg" width="100">
+                          </div>
+                          <div class="col-md-12 margin-top-10">
+                              <span class="col-md-12">Rate: <strong>2.0</strong></span>
+                              <div class="rating" style="background-position: 0 -66px;"></div>
+                          </div>
+
+                      </div>
+                      <div class="col-md-10">
+                          <div class="row">
+                              <a href="#" class="col-md-6 item-title">Advance Moving & Storage</a>
+                              <div class="col-md-6">
+                                  <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add Cart </button>
+                                  <button type="button" class="btn btn-primary"><i class="fa fa-star-o"></i> Add Review </button>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <span class="col-md-6 item-country">Country : <strong>United States</strong></span>
+                              <span class="col-md-6 item-country">State : <strong>Alabama</strong></span>
+                          </div>
+                          <div class="row">
+                              <span class="col-md-6 item-country">City : <strong>Aox</strong></span>
+                              <span class="col-md-6 item-country">Zipcode : <strong>12345</strong></span>
+                          </div>
+                          <div class="row">
+                              <span class="col-md-6 item-country">Website : <strong><a href="http://awisemoveinc.com/" target="_blank">http://awisemoveinc.com/</a> </strong></span>
+                              <span class="col-md-6 item-country">Phone : <strong>(031)-235-4254</strong></span>
+                          </div>
+                          <div class="row">
+                              <span class="col-md-6 item-country">USDOT# : <strong>12345</strong></span>
+                              <span class="col-md-6 item-country">MCDOT# : <strong>12345</strong></span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row search-item">
+                      <div class="col-md-2">
+                          <div class="col-md-12">
+                              <img class="item-image" src="assets/corporate/img/no_logo.jpg" width="100">
+                          </div>
+                          <div class="col-md-12 margin-top-10">
+                              <span class="col-md-12">Rate: <strong>1.0</strong></span>
+                              <div class="rating" style="background-position: 0 -89px;"></div>
+                          </div>
+
+                      </div>
+                      <div class="col-md-10">
+                          <div class="row">
+                              <a href="#" class="col-md-6 item-title">Advance Moving & Storage</a>
+                              <div class="col-md-6">
+                                  <button type="button" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add Cart </button>
+                                  <button type="button" class="btn btn-primary"><i class="fa fa-star-o"></i> Add Review </button>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <span class="col-md-6 item-country">Country : <strong>United States</strong></span>
+                              <span class="col-md-6 item-country">State : <strong>Alabama</strong></span>
+                          </div>
+                          <div class="row">
+                              <span class="col-md-6 item-country">City : <strong>Aox</strong></span>
+                              <span class="col-md-6 item-country">Zipcode : <strong>12345</strong></span>
+                          </div>
+                          <div class="row">
+                              <span class="col-md-6 item-country">Website : <strong><a href="http://awisemoveinc.com/" target="_blank">http://awisemoveinc.com/</a> </strong></span>
+                              <span class="col-md-6 item-country">Phone : <strong>(031)-235-4254</strong></span>
+                          </div>
+                          <div class="row">
+                              <span class="col-md-6 item-country">USDOT# : <strong>12345</strong></span>
+                              <span class="col-md-6 item-country">MCDOT# : <strong>12345</strong></span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+        </div>
+    </div>
+
+    <!--about end-->
+        <!-- BEGIN CLIENTS -->
+    <!-- BEGIN PRE-FOOTER -->
+    <div class="pre-footer" style="margin-bottom:0; background-color: black;">
+      <div class="container">
+        <div class="row">
+          <!-- BEGIN BOTTOM ABOUT BLOCK -->
+          <div class="col-sm-2">
+            <h4 style="color: #ffffff; text-align: center">Legal Status</h4>
+            <ul style="color: #ffffff; font-size: 13px">
+              <a href="https://moverzfax.com/state-registration.html">State Registration</a>
+              <a href="http://ai.fmcsa.dot.gov/hhg/search.asp">Federal Registration</a>
+              <a href="http://ai.fmcsa.dot.gov/">Analysis and Information: <br>Federal Movers</a>
+              <a href="http://www.movingscam.com/superlist">MovingScam Status</a>										
+              <a href="http://li-public.fmcsa.dot.gov/LIVIEW/pkg_carrquery.prc_carrlist">Licensing and Information</a>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <h4 style="color: #ffffff; text-align: center;">MoverZfax.com</h4>
+            <ul style="color: #ffffff; font-size: 13px">
+                <a href="faq.html">Frequently Asked Questions</a>
+                <a href="privacy_policy.html">Privacy Policy</a>
+                <a href="contact_us.html">Contact Us</a>
+                <a href="t&c.html">Terms of Use</a>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4 style="color: #ffffff; text-align: center">Moving Associations</h4>
+            <ul style="color: #ffffff; font-size: 13px">
+                <a href="http://www.bbb.org/">Better Business Bureau</a>
+                <a href="http://www.mover.net/">Canadian Association of Movers</a>
+                <a href="http://www.moving.org/">American Moving &amp; Storage Assoc.</a>
+                <a href="http://promover.org/">Promover.org</a>
+                <a href="http://www.iamovers.org/">International Association of Movers</a>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h4 style="color: #ffffff; text-align: center">Recommendation Portals</h4>
+            <ul style="color: #ffffff; font-size: 13px">
+                <a href="http://mymovingreviews.com/">My Moving Reviews</a>
+                <a href="http://www.yelp.com/dc">Yelp</a>
+                <a href="http://www.insiderpages.com/">Insider Pages</a>
+                <a href="http://www.kudzu.com/">Kudzu</a>
+                <a href="http://www.moverreviews.com/">Mover Reviews</a>
+                <a href="http://www.ripoffreport.com/">Ripoff Report</a>
+                <a href="http://www.reviewamover.com/">Review a Mover</a>
+                <a href="http://www.moverssearchandreviews.com/">Movers Search and Reviews</a>
+                <!--<li><a href="http://epinions.com/Moving_Companies">Epinions</a></li>-->
+                <a href="http://bestmovingcompaniesreviews.com/category/movers-reviews/">Best Moving Companies</a>
+                <a href="http://www.angieslist.com/moving/">Angies List</a>
+                <a href="http://transportreviews.com/">Transport Reviews</a>
+                <a href="http://transportreports.com/">Transport Reports</a>
+                <a href="http://movingguardian.org/">Moving Guardian</a>
+                <a href="http://www.bestmoverspackers.com/moving-reviews.html">Best Movers Packers</a>
+                <!-- END BOTTOM ABOUT BLOCK -->
+                <a href="http://www.movers.com/moving-reviews.html">Movers Reviews</a>  
+                <a href="http://www.moverrankings.com/latest-moving-company-reviews.php">Mover Rankings</a>
+                <a href="http://www.movingcompanyreviews.com/">Moving Company Reviews</a>
+                <a href="https://moverzfax.com/add-a-review.html">MoverZfax Reviews</a>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+                        <h4 style="color: #ffffff; text-align: center">Protect Yourself</h4>
+                        <ul style="color: #ffffff; font-size: 13px">
+                            <a href="https://www.protectyourmove.gov/related-sites/contactstate_view.aspx">Customer Resource (PER STATE)</a>
+                            <a href="https://nccdb.fmcsa.dot.gov/NCCDB/ComplaintEntry.aspx?choice=CONSUMER">Write a Complaints to USDOT</a>
+                            <a href="http://ai.fmcsa.dot.gov/hhg/search.asp">Search For Complaints</a>
+                            <a href="http://safer.fmcsa.dot.gov/CompanySnapshot.aspx">Federal Motor Carrier Snapshot</a>
+                            <a href="https://ai.fmcsa.dot.gov/SMS/Search/Index.aspx">Safety Data For Movers</a>
+                            <a href="https://www.pissedconsumer.com/post-complaint.html">Pissed Consumer</a>
+                            <a href="http://www.consumeraffairs.com/movers/">Consumer Affairs</a>
+                            <a href="http://www.complaintsboard.com/?search=Moving+companies&amp;complaints=Complaints">Complaints Board</a>
+                        </ul>
+          </div>
+        </div><hr>
+        <!-- BEGIN PAYMENTS -->
+        <div class="col-md-4 col-sm-4 padding-top-10">
+                    ©2019 All Rights Reserverd. 
+        </div>
+        <div class="col-md-4 col-sm-4" style="font-size: large;">
+            <ul class="social-footer list-unstyled list-inline pull-right">
+              <li><a href="https://www.protectyourmove.gov/related-sites/contactstate_view.aspx"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.protectyourmove.gov/related-sites/contactstate_view.aspx"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="https://www.protectyourmove.gov/related-sites/contactstate_view.aspx"><i class="fa fa-dribbble"></i></a></li>
+              <li><a href="jhttps://www.protectyourmove.gov/related-sites/contactstate_view.aspx"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://www.protectyourmove.gov/related-sites/contactstate_view.aspx"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.protectyourmove.gov/related-sites/contactstate_view.aspx"><i class="fa fa-skype"></i></a></li>
+              <li><a href="https://www.protectyourmove.gov/related-sites/contactstate_view.aspx"><i class="fa fa-github"></i></a></li>
+              <li><a href="https://www.protectyourmove.gov/related-sites/contactstate_view.aspx"><i class="fa fa-youtube"></i></a></li>
+              <li><a href="https://www.protectyourmove.gov/related-sites/contactstate_view.aspx"><i class="fa fa-dropbox"></i></a></li>
+            </ul>  
+        </div>          
+        <!-- END PAYMENTS -->
+        <!-- BEGIN POWERED -->
+        <div class="col-md-4 col-sm-4 text-right">
+            <p class="powered">Powered by: <a href="http://www.keenthemes.com/">Best stronger Team</a></p>
+      </div>
+      </div>
+    </div>
+    <!--footer end-->
+
+    <!-- Load javascripts at bottom, this will reduce page load time -->
+    <!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
+    <!--[if lt IE 9]>
+    <script src="assets/plugins/respond.min.js"></script>
+    <![endif]-->
+    <script src="assets/plugins/jquery.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>      
+    <script src="assets/corporate/scripts/back-to-top.js" type="text/javascript"></script>
+    <!-- END CORE PLUGINS -->
+
+    <!-- BEGIN PAGE LEVEL JAVASCRIPTS (REQUIRED ONLY FOR CURRENT PAGE) -->
+    <script src="assets/plugins/fancybox/source/jquery.fancybox.pack.js" type="text/javascript"></script><!-- pop up -->
+    <script src="assets/plugins/owl.carousel/owl.carousel.min.js" type="text/javascript"></script><!-- slider for products -->
+    <script src="assets/plugins/uniform/jquery.uniform.min.js"></script>
+    <script src="assets/corporate/scripts/layout.js" type="text/javascript"></script>
+    <script src="assets/pages/scripts/bs-carousel.js" type="text/javascript"></script>
+    <script type="text/javascript">
+     
+        jQuery(document).ready(function() {
+          
+          
+            
+          $('.client-item').mouseover(function(){   
+            // alert('fsndfldslf');
+             $('.color-img').css("display", "none");
+             $(this) .find('.color-img').css("display", "block");
+             $(this) .find('.color-img').css("border", "solid");
+             $('.first-item').css("display", "block");
+             $(this).find('.first-item').css("display", "none");
+            });
+
+            
+
+            Layout.init();
+            Layout.initUniform();
+            Layout.initOWL();
+            // Layout.initTwitter();
+            Layout.initFixHeaderWithPreHeader(); /* Switch On Header Fixing (only if you have pre-header) */
+            Layout.initNavScrolling();
+
+
+
+
+           
+        });
+        // alert('ok');
+    </script>
+
+    <script src="assets/corporate/scripts/custom.js" type="text/javascript"></script>
+    <!-- END PAGE LEVEL JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>
